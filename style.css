@@ -1,5 +1,29 @@
 /* Index Page */
+.ihtml, .ibody{
+    margin: 0;
+    background-color: #F2E9E4;
+    font-family: 'Quicksand', sans-serif;
+}
 
+.iNav{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iNames{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.iA{
+    text-decoration: none;
+    color: black;
+}
 
 /* Anika Page */
 
@@ -14,3 +38,29 @@
 
 
 /* Mariessa Page */
+
+.mhtml, .mbody{
+    margin: 0;
+    background-color: #F2E9E4;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.mNav{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mNames{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.mA{
+    text-decoration: none;
+    color: black;
+}
