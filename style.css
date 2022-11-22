@@ -5,6 +5,8 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+/* Navigation Bar Start*/
+
 .iNav{
     height: 80px;
     display: flex;
@@ -24,6 +26,8 @@
     text-decoration: none;
     color: black;
 }
+/* Navigation Bar End*/
+
 
 /* Anika Page */
 
@@ -45,6 +49,8 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+/* Navigation Bar Start*/
+
 .mNav{
     height: 80px;
     display: flex;
@@ -63,4 +69,92 @@
 .mA{
     text-decoration: none;
     color: black;
+}
+
+/* Navigation Bar End*/
+
+.mIntro{
+    height: 100vh;
+}
+
+.mContainer1{
+    position: relative;
+}
+
+.mProfileBox{
+    width: 40%;
+    height: 568px;
+    background-color: #9A8C98;
+    border-radius: 155px;
+    z-index: 10;
+    margin: 0;
+    position: relative;
+    left: 15vw;
+    max-width: 586px;
+}
+
+.mIntroBox{
+    width: 80%;
+    height: 480px;
+    background-color: #C9ADA7;
+    border-radius: 50px;
+    position: absolute;
+    left: 10vw;
+    top: 55%;
+    margin: 0;
+}
+
+.mIntroText{
+    display: flex;
+    flex-direction: row;
+    padding-top: 280px;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 20%;
+}
+
+.mIntroIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-right: 10%;
+    padding-top: 30px;
+}
+
+.mDownArrow1{
+    position: absolute;
+    right: 3vw;
+    top: 800px;
+}
+
+.mName{
+    font-size: 32px;
+}
+
+.mIntroPara{
+    font-size: 16px;
+}
+
+/*Section 2*/
+
+.mAboutMe{
+    width: 100vw;
+    height: 100vh;
+    background-color: #22223B;
+    color: #C9ADA7;
+}
+
+.mAllAbouts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.mAboutMeHeader{
+    font-size: 32px;
+}
+
+.mAMBody{
+    font-size: 16px;
 }
