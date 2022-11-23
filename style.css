@@ -25,6 +25,97 @@
     color: black;
 }
 
+.imainheader {
+    height: 40px;
+    padding-left: 600px;
+    top: 121px;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 40px;
+    color: #22223B;
+}
+
+.icircle{
+    height: 310px;
+    width: 310px;
+    background-color: #9A8C98;
+    border-radius: 50%;
+    display: inline-block
+}
+
+.imainrectangle{
+    width: 1080px;
+    height: 480px;
+    top: 80px;
+    border-radius: 50px;
+    background-color: #C9ADA7;
+}
+
+.itextbox {
+    width: 620px;
+    height: 230px;
+    top: 200px;
+    border-radius: 50px;
+    background-color: #4A4E69;
+}
+
+.imeetbox {
+    width: 200px;
+    height: 35px;
+    top: 365px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+}
+
+.icarcircle{
+    display: flex;
+    justify-content: row;
+}
+
+.ianikacircle {
+    height: 25.66px;
+    width: 25.66px;
+    background-color: #F2E9E4;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.ikylecircle {
+    height: 25.66px;
+    width: 56.46px;
+    border-radius: 10px;
+    background-color: #F2E9E4;
+}
+
+.imariessacircle {
+    height: 25.66px;
+    width: 25.66px;
+    background-color: #F2E9E4;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.ipatriciacircle {
+    height: 25.66px;
+    width: 25.66px;
+    background-color: #F2E9E4;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.iyanjuncircle {
+    height: 25.66px;
+    width: 25.66px;
+    background-color: #F2E9E4;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.irightarrow {
+    width: 31px;
+    height: 31px;
+    top: 31px;
+}
 /* Anika Page */
 
 
