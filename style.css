@@ -5,6 +5,8 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+/* Navigation Bar Start*/
+
 .iNav{
     height: 80px;
     display: flex;
@@ -24,6 +26,8 @@
     text-decoration: none;
     color: black;
 }
+/* Navigation Bar End*/
+
 
 .imainheader {
     height: 40px;
@@ -449,6 +453,8 @@ img.pcircle-blue{
     font-family: 'Quicksand', sans-serif;
 }
 
+/* Navigation Bar Start*/
+
 .mNav{
     height: 80px;
     display: flex;
@@ -469,3 +475,199 @@ img.pcircle-blue{
     color: black;
 }
 
+/* Navigation Bar End*/
+
+.mIntro{
+    height: 100vh;
+}
+
+.mContainer1{
+    position: relative;
+}
+
+.mProfileBox{
+    width: 40%;
+    height: 568px;
+    background-color: #9A8C98;
+    border-radius: 155px;
+    z-index: 10;
+    margin: 0;
+    position: relative;
+    left: 15vw;
+    max-width: 586px;
+}
+
+.mIntroBox{
+    width: 80%;
+    height: 480px;
+    background-color: #C9ADA7;
+    border-radius: 50px;
+    position: absolute;
+    left: 10vw;
+    top: 55%;
+    margin: 0;
+}
+
+.mIntroText{
+    display: flex;
+    flex-direction: row;
+    padding-top: 280px;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 20%;
+}
+
+.mIntroIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-right: 10%;
+    padding-top: 30px;
+}
+
+.mDownArrow1{
+    position: absolute;
+    right: 3vw;
+    top: 800px;
+}
+
+.mName{
+    font-size: 32px;
+}
+
+.mIntroPara{
+    font-size: 16px;
+}
+
+/*Section 2 - About Me*/
+
+.mAboutMe{
+    width: 100vw;
+    height: 100vh;
+    background-color: #22223B;
+    color: #C9ADA7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mAboutMeAlign{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 150px;
+}
+
+.mAllAbouts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 130px;
+}
+
+.mAboutMeHeader{
+    font-size: 32px;
+    padding-left: 15vw;
+}
+
+.mAMBody{
+    font-size: 16px;
+    margin: 0;
+}
+
+.mAboutMeImage{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 185px;
+    height: 187px;
+}
+
+.mAbout{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.mAboutText{
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    align-items: flex-start;
+    width: 300px;
+}
+
+.mDownArrow2{
+    position: absolute;
+    right: 3vw;
+    top: 1750px;
+}
+
+/*Section 3 - Education*/
+
+.mEducation{
+    height: 100vh;
+    background-color: #F2E9E4;
+}
+.dotIndicators.active{
+    height: 56px;
+    width: 26px;
+    margin: 0 2px;
+    background: #4A4E69;
+    border-radius: 50%;
+}
+
+.dotIndicators{
+    height: 26px;
+    width: 26px;
+    margin: 0 2px;
+    background: #F2E9E4;
+    border-radius: 50%;
+}
+
+.mEducationImage{
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+}
+
+.mEducationCarousel{
+    width: 80%;
+    height: 570px;
+    background-color: #22223B;
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    justify-content: space-evenly;
+}
+
+.mEducationImageAndControls{
+    display: flex;
+    flex-direction: column;
+}
+
+.mEducationCarouselControl{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+}
+
+.mEducationText{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mEduCarHeader{
+    display: flex;
+    flex-direction: column;
+    color: #F2E9E4;
+}
+
+.mEduCarText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 18%;
+    color: #F2E9E4;
+}
