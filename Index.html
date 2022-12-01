@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="ihtml" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,10 @@
     <title>Meet Our Team</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
+
 <body class="ibody">
     <div class="iNav">
         <a class="iA" href="Index.html">HOME</a>
@@ -21,28 +23,105 @@
             <a class="iA" href="yanjun.html">YanJun</a>
         </div>
     </div>
-<h2 class="imainheader">Meet Our Team</h2>
-<span class="icircle"></span>
-<div class="imainrectangle">
-   
-    <div class="itextbox">
-        <p>Lorem ipsum dolor sit amet</p>
+    <h2 class="imainheader">Meet Our Team</h2>
+    <div class="icontainer1">
+        <img src="images/index/anika.png" alt="" class="iheadshot" id="slide">
+    </div>
 
-      <div class="imeetbox">
-            <p>Meet -----</p>
+    <div class="icontainer2">
+        <div class="imainrectangle">
         </div>
     </div>
-
-    <div class="icarcircle">
-    <div class="ianikacircle"></div>
-    <div class="ikylecircle"></div>
-    <div class="imariessacircle"></div>
-    <div class="ipatriciacircle"></div>
-    <div class="iyanjuncircle"></div>
-    <img class="irightarrow" src="" alt=""> 
+    <div class="icontainer3">
+        <div class="itextbox">
+        </div>
     </div>
-</div>
+    <div class="imeetbox">
+        <p id="imeetName">Meet Anika</p>
+    </div>
+    </div>
+    <div class="ibodytext">
+        <p id="ibiotext">"Bio 1".</p>
+    </div>
+    <div class="icreatorcircle">
+        <button onclick="lastSlide()"><img class="ileftarrow" src="Images/leftarrow.svg" alt=""></button>
+        <div class="icarcircle"></div> 
+        <div class="ianikaCircle" id="ianikaCircle"></div>
+        <div class="ikyleCircle"></div>
+        <div class="imariessaCircle"></div>
+        <div class="ipatriciaCircle"></div>
+        <div class="iyanjunCircle"></div>
+        <button onclick="nextSlide()"><img class="irightarrow" src="Images/rightarrow.svg" alt=""></button>
+    </div>
 
+    <script>
+        //Carousel
+        var slide = document.getElementById('slide');
+        var imeetName = document.getElementById('imeetName');
+        var ibioText = document.getElementById('ibioText');
+        var ianikaCircle = document.getElementById('ianikaCircle')
 
+        var imageNames = [
+            "images/index/anika.png",
+            "images/index/kyle.png",
+            "images/index/mariessa.png",
+            "images/index/patricia.png",
+            "images/index/yanjun.png"
+        ];
+        var meetNames = [
+            "Anika",
+            "Kyle",
+            "Mariessa",
+            "Patricia",
+            "YanJun"
+        ];
+
+        var bios = [
+            "Bio 1", //if editing this, also need to update in html
+            "Bio 2",
+            "Bio 3",
+            "Bio 4",
+            "Bio 5",
+        ];
+
+        //var sliderCircle = "selectedCircle";
+
+        var index = 0;
+
+        function nextSlide() {
+            index += 1;
+            if (index == imageNames.length) {
+                index = 0;
+            }
+            /*if(index == 0){
+                ianikaCircle.class = sliderCircle;
+            }else if(index == 1){
+                ikyleCircle.class = sliderCircle;
+            }else if(index == 2){
+                imariessaCircle.class = sliderCircle;
+            }else if (index == 3){
+                ipatriciaCircle.class = sliderCircle;
+            }else if (index == 4){
+                iyanjunCircle.class = sliderCircle;
+            }*/
+            slide.src = imageNames[index];
+            imeetName.innerText = `Meet ${meetNames[index]}`;
+            ibiotext.innerText = `${bios[index]}`;
+        }
+
+        function lastSlide() {
+            index -= 1;
+            if (index == imageNames.length) {
+                index = 0;
+            } else if (index < 0) {
+                index = 4
+            }
+            slide.src = imageNames[index];
+            imeetName.innerText = `Meet ${meetNames[index]}`;
+            ibiotext.innerText = `${bios[index]}`;
+        }
+
+    </script>
 </body>
+
 </html>
