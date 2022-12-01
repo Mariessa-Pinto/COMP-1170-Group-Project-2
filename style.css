@@ -232,6 +232,13 @@ button:hover{
     align-items: center;
 }
 
+.pNames{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+}
+
 .pA{
     text-decoration: none;
     color: black;
@@ -243,17 +250,18 @@ button:hover{
     grid-template: 
     "b b a c ." 320px /*large bubble height*/
     "s s . . d" 180px /*small bubble height*/
-    ". . . e ." 135px /*xsmall bubble height*/
+    "s s . e ." 135px /*xsmall bubble height*/
     "g f f f h" 652px /*xlarge bubble height*/
     ". u i . ." 250px /*medium bubble height + added space between div on top*/
-    ". . . j ." 135px
+    ". . . j ." 250px
     ". . . v k" 205px /*medium bubble height*/
     "m m . l ." 500px /*mid-large bubble height*/
     ". . n t ." 205px
     ". o . . ." 135px
-    "p w . . ." 205px
+    "p w w . ." 205px
     ". q . . ." 320px
-    "x x r r r" 500px
+    "y y r r r" 500px
+    "x x r r r" 100px
     ;
     align-items: center;
     justify-items: center;
@@ -336,6 +344,10 @@ button:hover{
     position: relative;
 }
 
+.pbox25{
+    grid-area: y;
+}
+
 /*Patricia Text*/
 
 .pbox19{
@@ -364,12 +376,12 @@ button:hover{
 
 /*Image Formatting*/
 
-img.pcircle-default{
+.pcircle-default{
     border: 5px solid #C9ADA7;
 }
 
 img.pcircle-blue{
-    border: 5px solid #4A4E69
+    border: 5px solid #4A4E69;
 }
 
 .pxsmallcircle{
@@ -415,6 +427,87 @@ img.pcircle-blue{
     border-radius: 100%;
 }
 
+.pdrawing{
+    height: 400px;
+    background: transparent;
+    animation-name: pFloating;
+    animation-duration: 10s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pFloating{
+    0%{
+        transform: rotate(5deg) translateY(0px);
+
+    }
+    25%{
+        transform: rotate(-20deg) translateY(-20px);
+    }
+    50%{
+        transform: rotate(10deg) translateY(0px);
+    }
+    75%{
+        transform: rotate(-10deg) translateY(-60px);
+    }
+    100%{
+        transform: rotate(5deg) translateY(0px);
+    }
+}
+
+
+/*Hover Image Changes*/
+.pOpacity{
+    opacity: 20%;
+}
+
+.pbox6:hover .ptext-overlay{
+    opacity: 0%;
+}
+
+.pbox6:hover .pOpacity{
+    opacity: 100%;
+}
+
+.pbox13:hover .ptext-overlay{
+    opacity: 0%;
+}
+
+.pbox13:hover .pOpacity{
+    opacity: 100%;
+}
+
+.pbox18:hover .ptext-overlay{
+    opacity: 0%;
+}
+
+.pbox18:hover .pOpacity{
+    opacity: 100%;
+}
+
+/*Adjusting position of images inside bubbles*/
+
+.pImgAdj-1{
+    object-position: 0% 0%;
+}
+
+.pImgAdj-2{
+    object-position: 0 25%;
+}
+
+.pImgAdj-3{
+    object-position: 0% 30%;
+}
+
+.pImgAdj-4{
+    object-position: 0 60%;
+}
+
+.pImgAdj-5{
+    object-position: 0 80%;
+}
+
+
 /*Text Formatting*/
 
 .pheader-text{
@@ -427,18 +520,73 @@ img.pcircle-blue{
     text-align: center;
 }
 
-.ptext{
+.ptext-overlay{
     text-align: center;
     position: absolute;
     top: 25%;
-}
-
-.ptext-overlay{
     font-size: 36px;
     max-width: 652px;
 }
 
+@media only screen and (max-width: 1000px){
+    .bubbles{
+        margin: 100px 15px;
+        grid-template:
+        "b b" 205px
+        "s s" 350px
+        "a c" 350px
+        "d c" 180px
+        "d e" 205px
+        "g e" 180px
+        "g h" 320px
+        ". h" 320px
+        "f f" 350px
+        "i u" 205px
+        "i u" 205px
+        "v j" 320px
+        "k k" 205px
+        "m m" 400px
+        "l l" 205px
+        "n t" 205px
+        "n t" 205px
+        "o o" 135px
+        "w p" 205px
+        "w p" 205px
+        "q q" 320px
+        "r r" 400px
+        "x x" 180px
+    ;
+    }
 
+    .plargecircle{
+        height: 205px;
+        width: 205px;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+
+    .pmid-largecircle{
+        height: 320px;
+        width: 320px;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+    
+    .pxlargecircle{
+        height: 320px;
+        width: 320px;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+    
+    .ptext-overlay{
+        text-align: center;
+        position: absolute;
+        top: 25%;
+        font-size: 25px;
+        max-width: 320px;
+    }
+}
 
 
 /* YanJun Page */
