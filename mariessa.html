@@ -16,13 +16,18 @@
 <div id="mIntro" class="mIntro">
     <div class="mNav">
         <a class="mA" href="Index.html">HOME</a>
-        <div class="mNames">
+        <div id="mNames" class="mNames">
             <a class="mA" href="anika.html">Anika</a>
             <a class="mA" href="kyle.html">Kyle</a>
             <a class="mA" href="mariessa.html">Mariessa</a>
             <a class="mA" href="patricia.html">Patricia</a>
             <a class="mA" href="yanjun.html">YanJun</a>
         </div>
+        <div class="mHamContainer" onclick="menuToggle()">
+        <div id="mBar1" class="mHamburger"></div>
+        <div id="mBar2" class="mHamburger"></div>
+        <div id="mBar3" class="mHamburger"></div>
+    </div>
     </div>
     <div class="mContainer1">
         <div class="mProfileBox">
@@ -136,11 +141,12 @@
 
 <div id="mHobbies" class="mHobbies">
     <h1 class="mHobbiesHeader">Hobbies</h1>
+    <div class="mHobbiesAlign">
     <div class="mHobTopBack"></div>
         <div class="mHobbiesContainer">
                 <div class="mHobbiesText">
                 <h2 class="mHobbiesTitle">Hiking</h2>
-                <p class="mHobbiesDesc">I enjoy hiking trails primarily around the Fraser Valley. I also <br>enjoy hiking on Vancouver Island and the Sunshine Coast. My <br>absolute favorite trail is Mount Cheam in Chilliwack, BC.</p>
+                <p class="mHobbiesDesc">I enjoy hiking trails primarily around the Fraser Valley. I also enjoy hiking on Vancouver Island and the Sunshine Coast. My absolute favorite trail is Mount Cheam in Chilliwack, BC.
                 </div>
                 <div class="mHobbiesContainerAlign">
             <img class="mHobbiesImage" src="Images/mariessa/mHiking.JPG" alt="">
@@ -157,6 +163,7 @@
             </div>
         </div>
         <div class="mHobBottomBack"></div>
+    </div>
 </div>
 
 <div class="mFooter">
@@ -171,6 +178,21 @@
 <a class="mBackToTop" href="#mIntro"><img src="Images/mariessa/mBackToTop.svg" alt=""></a>
 </div>
 
+<script>
+
+var navMobile = document.getElementById("mNames");
+var mBar1 = document.getElementById("mBar1")
+var mBar2 = document.getElementById("mBar2")
+var mBar3 = document.getElementById("mBar3")
+
+function menuToggle(){
+    mNames.classList.toggle("mNamesActive");
+    mBar1.classList.toggle("mChange1");
+    mBar2.classList.toggle("mChange2");
+    mBar3.classList.toggle("mChange3");
+}
+
+</script>
 
 </body>
 </html>

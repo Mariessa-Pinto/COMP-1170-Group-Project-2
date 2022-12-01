@@ -26,6 +26,8 @@
     text-decoration: none;
     color: black;
 }
+
+
 /* Navigation Bar End*/
 
 
@@ -475,6 +477,63 @@ img.pcircle-blue{
     color: black;
 }
 
+.mHamContainer{
+    display: none;
+}
+
+
+@media only screen and (max-width: 1023px) {
+
+    .mNames{
+        display: none;
+        visibility: hidden;
+    }
+
+    .mNamesActive{
+        display: flex;
+        visibility: visible;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-end;
+        padding-top: 232px;
+        margin-right: -36px;
+        gap: 20px;
+    }
+    
+    .mNav{
+        justify-content: space-between;
+        padding-left: 90px;
+        padding-right: 50px;
+    }
+
+    .mHamburger{
+        width: 35px;
+        height: 4px;
+        background-color: black;
+        border-radius: 25px;
+        margin: 3px 0;
+        transition: 500ms;
+    }
+    .mHamContainer{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .mChange1{
+        transform: translate(0, 10px) rotate(-45deg);
+    }
+
+    .mChange2{
+        opacity: 0;
+    }
+
+    .mChange3{
+        transform: translate(0, -10px) rotate(45deg); 
+    }
+}
+
+
 /* Navigation Bar End*/
 
 .mIntro{
@@ -486,17 +545,20 @@ img.pcircle-blue{
 }
 
 .mProfilePic{
-    width: 592px;
+    width: 40vw;
+    min-width: 500px;
     height: 524px;
+    max-width: 586px;
     object-fit: cover;
     border-radius: 155px;
     position: relative;
     left: 0vw;
-    bottom: -4vh;
+    bottom: -5vh;
 }
 
 .mProfileBox{
-    width: 40%;
+    width: 40vw;
+    min-width: 500px;
     height: 568px;
     background-color: #9A8C98;
     border-radius: 155px;
@@ -548,6 +610,63 @@ img.pcircle-blue{
 
 .mIntroPara{
     font-size: 16px;
+}
+
+
+@media only screen and (max-width: 1023px) {
+    
+    .mIntro{
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .mContainer1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mProfileBox{
+        left: 0;
+    }
+
+    .mIntroBox{
+        left: 0;
+        position: relative;
+        margin-top: -200px;
+    }
+    
+    .mIntroText{
+        display: flex;
+        flex-direction: column;
+        padding-top: 200px;
+    }
+
+    .mIntroIcons{
+        justify-content: center;
+        padding-right: 0%;
+    }
+
+    .mDownArrow1{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .mProfileBox{
+        max-width: 500px;
+        min-width: 300px;
+        height: 450px;
+        border-radius: 100px;
+    }
+    .mProfilePic{
+        max-width: 500px;
+        min-width: 300px;
+        height: 450px;
+        bottom: 0vh;
+        border-radius: 100px;
+    }
 }
 
 /*Section 2 - About Me*/
@@ -646,8 +765,10 @@ img.pcircle-blue{
 }
 
 .mEducationImage{
-    width: 380px;
-    height: 380px;
+    max-width: 380px;
+    max-height: 380px;
+    width: 30vw;
+    height: 30vw;
     object-fit: cover;
     border-radius: 50px;
 }
@@ -801,39 +922,47 @@ img.pcircle-blue{
 }
 
 .mHobTopBack{
-    width: 694px;
-    height: 562px;
+    max-width: 694px;
+    max-height: 562px;
+    width: 47vw;
+    height: 40vw;
     background-color: #22223B;
     border-radius: 155px;
-    position: relative;
-    bottom: -2vh;
-    left: 10vw;
+    margin-left: 50px;
+    margin-top: -200px;
 }
 
 .mHobBottomBack{
-    width: 694px;
-    height: 562px;
+    max-width: 694px;
+    max-height: 562px;
+    width: 47vw;
+    height: 40vw;
     background-color: #22223B;
     border-radius: 155px;
-    position: relative;
-    bottom: 103vh;
-    left: 48vw;
+    margin-left: -262px;
+    margin-top: 240px;
+    margin-right: 50px;
 }
 
 .mHobbiesContainer{
-    width: 690px;
-    height: 624px;
+    max-width: 740px;
+    display: flex;
+    max-height: 674px;
+    width: 45vw;
+    height: 50vw;
     background-color: #9A8C98;
     border-radius: 155px;
     z-index: 10;
-    position: relative;
-    bottom: 52vh;
-    left: 28vw;
+    margin-left: -260px;
+    margin-top: 27px;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .mHobbiesImage{
-    width: 480px;
-    height: 325px;
+    max-width: 480px;
+    max-height: 325px;
+    width: 30vw;
     object-fit: cover;
     border-radius: 50px;
 }
@@ -872,10 +1001,18 @@ img.pcircle-blue{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 105px;
+    padding-left: 5vw;
+    padding-right: 5vw;
     padding-bottom: 10px;
-    padding-top: 34px;
+    padding-top: 2vw;
     color: #F2E9E4;
+}
+
+.mHobbiesAlign{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Footer*/
