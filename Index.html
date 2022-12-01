@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="ihtml" lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b49f2d590b.js" crossorigin="anonymous"></script>
 </head>
-
 <body class="ibody">
     <div class="iNav">
         <a class="iA" href="Index.html">HOME</a>
@@ -20,40 +19,33 @@
             <a class="iA" href="kyle.html">Kyle</a>
             <a class="iA" href="mariessa.html">Mariessa</a>
             <a class="iA" href="patricia.html">Patricia</a>
-            <a class="iA" href="yanjun.html">YanJun</a>
+            <a class="iA" href="yanjun.html">Yanjun</a>
         </div>
     </div>
     <h2 class="imainheader">Meet Our Team</h2>
-    <div class="icontainer1">
+    <div class="icontainer">
         <img src="images/index/anika.png" alt="" class="iheadshot" id="slide">
-    </div>
-
-    <div class="icontainer2">
         <div class="imainrectangle">
+            <div class="itextbox">
+                <p id="ibiotext">"Bio 1".</p>
+                <button id="imeetName" onclick="">Meet Anika</button>
+                <div class="icreatorcircle">
+                    <button class="iarrow" onclick="lastSlide()"><i class="fa fa-arrow-circle-o-left fa-2x" aria-hidden="true"></i></i></button>
+                    <!-- <button class="iarrow-left" onclick="lastSlide()"><img class="ileftarrow" src="Images/leftarrow.svg" alt=""></button> -->
+                    <div class="icarcircle"></div> 
+                    <div class="ianikaCircle" id="ianikaCircle"></div>
+                    <div class="ikyleCircle"></div>
+                    <div class="imariessaCircle"></div>
+                    <div class="ipatriciaCircle"></div>
+                    <div class="iyanjunCircle"></div>
+                    <!-- <button class="iarrow-right" onclick="nextSlide()"><img class="irightarrow" src="Images/rightarrow.svg" alt=""></button> -->
+                    <button class="iarrow" onclick="nextSlide()"><i class="fa fa-arrow-circle-o-right fa-2x" aria-hidden="true"></i></button>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="icontainer3">
-        <div class="itextbox">
-        </div>
-    </div>
-    <div class="imeetbox">
-        <p id="imeetName">Meet Anika</p>
-    </div>
-    </div>
-    <div class="ibodytext">
-        <p id="ibiotext">"Bio 1".</p>
-    </div>
-    <div class="icreatorcircle">
-        <button onclick="lastSlide()"><img class="ileftarrow" src="Images/leftarrow.svg" alt=""></button>
-        <div class="icarcircle"></div> 
-        <div class="ianikaCircle" id="ianikaCircle"></div>
-        <div class="ikyleCircle"></div>
-        <div class="imariessaCircle"></div>
-        <div class="ipatriciaCircle"></div>
-        <div class="iyanjunCircle"></div>
-        <button onclick="nextSlide()"><img class="irightarrow" src="Images/rightarrow.svg" alt=""></button>
     </div>
 
+    
     <script>
         //Carousel
         var slide = document.getElementById('slide');
@@ -73,7 +65,7 @@
             "Kyle",
             "Mariessa",
             "Patricia",
-            "YanJun"
+            "Yanjun"
         ];
 
         var bios = [

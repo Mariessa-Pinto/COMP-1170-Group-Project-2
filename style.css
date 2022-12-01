@@ -1,11 +1,11 @@
 /* Index Page */
 .ihtml, .ibody{
+    height: 100vh;
+    width: 100vw;
     margin: 0;
     background-color: #F2E9E4;
     font-family: 'Quicksand', sans-serif;
 }
-
-/* Navigation Bar Start*/
 
 .iNav{
     height: 80px;
@@ -13,6 +13,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 0 5px 20px #9a8c98;
 }
 
 .iNames{
@@ -25,82 +26,113 @@
 .iA{
     text-decoration: none;
     color: black;
+    font-size: 2vmin;
 }
 
+.iA:hover {
+    /* color: */
+    text-decoration: underline;
+}
 
-/* Navigation Bar End*/
+/*
+.iA:active {
+     color: ; 
+}
+*/
 
 
 .imainheader {
-    height: 40px;
-    padding-left: 735px;
-    top: 121px;
-    font-style: normal;
-    font-size: 32px;
-    line-height: 40px;
+    margin-left: 42%;
+    margin-top: 5%;
+    font-size: 4vmin;
     color: #22223B;
+    flex-direction: row;
 }
 
-.iheadshot{
-    height: 310px;
-    width: 310px;
+.icontainer {
+    position: relative;
+    margin-left: 14%;
+    margin-top: 10%;
+    display: flex;
+    /* flex-direction: row; */
+
+}
+.iheadshot{ 
+    display: flex;
+    position: relative;
+    z-index: 1;
+    margin-top: -9%;
+    /* margin-left: 4%; */
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
     border: 5px solid #9a8c98;
     background: #9a8c98;
-
+    box-shadow: 0 5px 20px #9a8c98;
 }
 
 .imainrectangle{
-    width: 1080px;
-    height: 480px;
-    top: 80px;
+    position: relative;
+    display: flex;
+    width: 62vw;
+    /* height: 440px; */
+    height: 52vh;
+    /* margin-top: 10%; */
+    margin-left: -17%;
+    padding-top: 40px;
     border-radius: 50px;
     background-color: #C9ADA7;
+    box-shadow: 0 5px 20px #9a8c98;
 }
 
 .itextbox {
-    width: 620px;
-    height: 230px;
-    top: 200px;
+    position: relative;
+    /* display: flex; */
+    width: 43vw;
+    height: 200px;
+    margin-top: 11%;
+    margin-left: 19%;
     border-radius: 50px;
     background-color: #4A4E69;
-    z-index: 4;
+    box-shadow: 0 5px 20px #4A4E69;
 }
 
-.imeetbox {
-    position: absolute;
+#ibiotext {
+    color: #fff;
+    padding-left: 10%;
+    padding-top: 5%;
+    font-size: 2vmin;
+}
+
+#imeetName {
+    position: relative;
+    border: 0;
+    outline: 0;
     width: 200px;
     height: 35px;
-    top: 600px;
-    left: 57.5%;
+    margin-left: 60%;
+    margin-top: 16%;
     border-radius: 20px;
     z-index: 4;
     background-color: #D9D9D9;
     text-align: center;
     line-height: 3px;
+    cursor: pointer;
+    box-shadow: 0 5px 20px #9a8c98;
+    /* display: flex; */
 }
 
+#imeetName:hover {
+    background: black;
+    color: #D9D9D9;
+}
 
-.ibodytext{
-    position: absolute;
-    display: flex;
-    top: 56%;
-    z-index: 6;
-    color: #F2E9E4;
-    padding-left: 38%;
-    text-align: center;
-    line-height: 20px;
-    overflow-wrap: break-word;
-    max-width: 500px;
-    }
-  
-
-.selectedCircle{
+/* .selectedCircle{
     height: 25.66px;
     width: 56.46px;
     border-radius: 10px;
     background-color: #F2E9E4;
-}
+} */
 
 .icarcircle{
     display: flex;
@@ -115,12 +147,20 @@
     display: inline-block;
 }
 
+.ianikaCircle:hover {
+    background-color: #4A4E69;
+}
+
 .ikyleCircle {
     height: 25.66px;
     width: 25.66px;
     background-color: #F2E9E4;
     border-radius: 50%;
     display: inline-block;
+}
+
+.ikyleCircle:hover {
+    background-color: #4A4E69;
 }
 
 .imariessaCircle {
@@ -131,12 +171,20 @@
     display: inline-block;
 }
 
+.imariessaCircle:hover {
+    background-color: #4A4E69;
+}
+
 .ipatriciaCircle {
     height: 25.66px;
     width: 25.66px;
     background-color: #F2E9E4;
     border-radius: 50%;
     display: inline-block;
+}
+
+.ipatriciaCircle:hover {
+    background-color: #4A4E69;
 }
 
 .iyanjunCircle {
@@ -147,74 +195,135 @@
     display: inline-block;
 }
 
-.icontainer1{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: left;
-    justify-content: left;
-    top: 20%;
-    color: #fff;
-    z-index: 1;
-    padding-left: 13%;
-}
-
-.icontainer2{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: left;
-    justify-content: center;
-    gap: 5%;
-    top: 35%;
-    padding-left: 20%;
-    text-align: left;
-    color: #fff;
-}
-
-.icontainer3{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: left;
-    justify-content: left;
-    top: 50%;
-    padding-left: 35%;
-    text-align: center;
-    color: #fff;
+.iyanjunCircle:hover {
+    background-color: #4A4E69;
 }
 
 .icreatorcircle{
-    position: absolute;
+    position: relative; 
     display: flex;
     flex-direction: row;
-    bottom: 8%;
-    padding-left: 62%;
+    padding-top: 7%;
+    padding-left: 60%;
     gap: 10px;
 }
 
-.irightarrow {
-    width: 31px;
+.iarrow {
+    width: 35px;
     height: 31px;
-}
-
-.ileftarrow {
-    width: 31px;
-    height: 31px;
-}
-
-button{
     border: none;
     background: none;
+    border-radius:50%;
 }
 
-button:hover{
+.iarrow:hover{
     border-bottom: 2px solid black;
     cursor: pointer;
+} 
+
+@media only screen and (max-width:600px){
+    .iA{
+        margin-left: 5px;
+    }
+
+    .imainheader {
+        margin-top: 50px;
+        margin-left: 37%;
+    }
+
+    .icontainer {
+        flex-direction: column;
+        margin-top: 20%;
+    }
+
+    .iheadshot {
+        height: 220px;
+        width: 220px;
+        margin-left: 15%;
+    }
+
+    .imainrectangle {
+        height: 500px;
+        width: 400px;
+        margin-top: -35%;
+        margin-left: -4%;
+    }
+
+    .itextbox {
+        height: 350px;
+        width: 350px;
+        margin-left: 6%; 
+        margin-top: 2%;
+    }
+
+    #ibiotext {
+        padding-top: 36%;
+    }
+
+    #imeetName {
+        margin-top: 65%;
+        margin-left: 22%; 
+    }
+
+    .icreatorcircle {
+        margin-left: -47%;
+    }
+}
+
+@media only screen and (max-width:960px) and (min-width:600px){
+    .iA{
+        margin-left: 5px;
+    }
+
+    .imainheader {
+        margin-top: 50px;
+        margin-left: 37%;
+    }
+
+    .icontainer {
+        flex-direction: column;
+        margin-top: 13%;
+    }
+
+    .iheadshot {
+        height: 250px;
+        width: 250px;
+        margin-left: -5%;
+    }
+
+    .imainrectangle {
+        height: 500px;
+        width: 620px;
+        margin-top: -25%;
+        margin-left: 2%;
+    }
+
+    .itextbox {
+        height: 300px;
+        width: 500px;
+        margin-left: 10%; 
+        margin-top: 13%;
+    }
+
+    #ibiotext {
+        padding-top: 15%;
+        padding-left: 15%;
+    }
+
+    #imeetName {
+        margin-top: 35%;
+        margin-left: 50%; 
+    }
+
+    .icreatorcircle {
+        margin-left: -14%;
+    }
 }
 
 
  /*Page */
+
+
 
 
 /* Patricia Page */
@@ -443,6 +552,200 @@ img.pcircle-blue{
 
 /* YanJun Page */
 
+.yhtml, .ybody{
+    margin: 0;
+    padding: 0;
+}
+
+.yBody {
+    width: 100vw;
+    height: 100vh;
+}
+
+.yNav{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.yNames{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.yA{
+    text-decoration: none;
+    color: black;
+}
+
+.ycontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.yfirst-page {
+    background-image: url(image.png);
+    background-position: center;
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+    height:100vh;
+    position: relative;
+}
+
+.ytext {
+    color: #F2E9E4;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    text-shadow: 4px 4px #22223B;
+}
+
+.ybig-title {
+    font-size: 90px;
+    font-weight: bold;
+    margin-top: 20%;
+}
+
+.ytitle {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 8%; 
+}
+
+.ytitle-page-1 {
+    background-image: url(image2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height:40vh;
+}
+
+.ysecond-page {
+    background-image: url(background-color.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height:200vh;
+    position: relative;
+}
+
+.ybox {
+    position: relative;
+    margin-left: 14%;
+    margin-top: 10%;
+    display: flex;
+}
+.yprofile-pic{ 
+    display: flex;
+    position: relative;
+    z-index: 1;
+    margin-top: 4%;
+    margin-left: 11%;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid #9a8c98;
+    background: #9a8c98;
+    box-shadow: 0 5px 20px #9a8c98;
+}
+
+.yrectangle{
+    position: relative;
+    display: flex;
+    width: 62vw;
+    height: 46vh;
+    margin-left: -28%;
+    padding-top: 40px;
+    border-radius: 50px;
+    background-color: #C9ADA7;
+    box-shadow: 0 5px 20px #9a8c98;
+}
+
+#ycontent {
+    color: #fff;
+    padding-left: 500px;
+    padding-top: 12%;
+    font-size: 2vmin;
+}
+
+.yh2 {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.ybox-2 {
+    width: 82%;
+    height: 650px;
+    display: flex;
+    margin-top: 9%;
+    margin-left: 8%;
+}
+
+.yproject-box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 20px;
+    box-shadow: 10px 10px 20px black;
+    border-radius: 20px;
+    border: 10px solid white;
+    background-color: #C9ADA7;
+}
+
+.yproject-img {
+    width: 200%;
+    height: 85%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.yproject-text {
+    font-size: 15px;
+    text-align: center;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yproject-box:hover {
+    flex-basis: 40%;
+}
+
+.yproject-img:hover {
+    width: 100%;
+    height: 100%;
+}
+
+.ytitle-page-2 {
+    background-image: url(image3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height:40vh;
+}
+
+.ythird-page {
+    background-image: url(background-color.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height:200vh;
+    position: relative;
+}
+
+
+/* .text-box {
+    width: 50%;
+    height:50%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center ;
+    background-color: #22223B;
+} */
 
 /* Kyle Page */
 
