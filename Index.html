@@ -14,17 +14,22 @@
 <body class="ibody">
     <div class="iNav">
         <a class="iA" href="Index.html">HOME</a>
-        <div class="iNames">
+        <div id="iNames" class="iNames">
             <a class="iA" href="anika.html">Anika</a>
             <a class="iA" href="kyle.html">Kyle</a>
             <a class="iA" href="mariessa.html">Mariessa</a>
             <a class="iA" href="patricia.html">Patricia</a>
             <a class="iA" href="yanjun.html">Yanjun</a>
         </div>
+        <div class="iHamContainer" onclick="menuToggle()">
+            <div id="iBar1" class="iHamburger"></div>
+            <div id="iBar2" class="iHamburger"></div>
+            <div id="iBar3" class="iHamburger"></div>
+        </div>
     </div>
     <h2 class="imainheader">Meet Our Team</h2>
     <div class="icontainer">
-        <img src="images/index/anika.png" alt="" class="iheadshot" id="slide">
+        <img src="Images/index/anika.png" alt="" class="iheadshot" id="slide">
         <div class="imainrectangle">
             <div class="itextbox">
                 <p id="ibiotext">"Bio 1".</p>
@@ -32,7 +37,6 @@
                 <div class="icreatorcircle">
                     <button class="iarrow" onclick="lastSlide()"><i class="fa fa-arrow-circle-o-left fa-2x" aria-hidden="true"></i></i></button>
                     <!-- <button class="iarrow-left" onclick="lastSlide()"><img class="ileftarrow" src="Images/leftarrow.svg" alt=""></button> -->
-                    <div class="icarcircle"></div> 
                     <div class="ianikaCircle" id="ianikaCircle"></div>
                     <div class="ikyleCircle"></div>
                     <div class="imariessaCircle"></div>
@@ -47,6 +51,19 @@
 
     
     <script>
+        //Navigation Bar
+        var navMobile = document.getElementById("iNames");
+        var iBar1 = document.getElementById("iBar1")
+        var iBar2 = document.getElementById("iBar2")
+        var iBar3 = document.getElementById("iBar3")
+
+        function menuToggle(){
+            iNames.classList.toggle("iNamesActive");
+            iBar1.classList.toggle("iChange1");
+            iBar2.classList.toggle("iChange2");
+            iBar3.classList.toggle("iChange3");
+        }
+
         //Carousel
         var slide = document.getElementById('slide');
         var imeetName = document.getElementById('imeetName');
@@ -54,11 +71,11 @@
         var ianikaCircle = document.getElementById('ianikaCircle')
 
         var imageNames = [
-            "images/index/anika.png",
-            "images/index/kyle.png",
-            "images/index/mariessa.png",
-            "images/index/patricia.png",
-            "images/index/yanjun.png"
+            "Images/index/anika.png",
+            "Images/index/kyle.png",
+            "Images/index/mariessa.png",
+            "Images/index/patricia.png",
+            "Images/index/yanjun.png"
         ];
         var meetNames = [
             "Anika",
