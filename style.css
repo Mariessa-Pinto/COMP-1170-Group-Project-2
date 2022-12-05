@@ -564,10 +564,6 @@
 
 }
 
-
-
-
-
 /* Patricia Page */
 .phtml, .pbody{
     margin: 0;
@@ -581,6 +577,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 0 5px 20px #9a8c98;
 }
 
 .pNames{
@@ -595,6 +592,43 @@
     color: black;
 }
 
+.pA:hover {
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 1023px) {
+
+    .pNames{
+        display: none;
+        visibility: hidden;
+    }
+
+    .pNamesActive{
+        display: flex;
+        visibility: visible;
+        flex-direction: column;
+        width: 80px;
+        align-items: flex-end;
+        padding-top: 232px;
+        gap: 20px;
+        z-index: 12;
+        background-color: #F2E9E4;
+        padding-right: 10px;
+        border-radius: 10px;
+        padding-bottom: 5px;
+        position: absolute;
+        right: 43px;
+    }
+    
+    .pNav{
+        justify-content: space-between;
+        padding-left: 90px;
+        padding-right: 50px;
+    }
+}
+
+
 .bubbles{
     margin: 100px 130px;
     display: grid;
@@ -603,12 +637,14 @@
     "s s . . d" 180px /*small bubble height*/
     "s s . e ." 135px /*xsmall bubble height*/
     "g f f f h" 652px /*xlarge bubble height*/
-    ". u i . ." 250px /*medium bubble height + added space between div on top*/
-    ". . . j ." 250px
-    ". . . v k" 205px /*medium bubble height*/
-    "m m . l ." 500px /*mid-large bubble height*/
-    ". . n t ." 205px
-    ". o . . ." 135px
+    "g f f f h" 250px
+    "i u . zz z" 250px /*medium bubble height + added space between div on top*/
+    ". . j . ." 250px
+    ". . v k k" 205px /*medium bubble height*/
+    "m m . l ." 250px 
+    "m m . l ." 250px
+    ". . n t t" 250px
+    ". o . . ." 205px
     "p w w . ." 205px
     ". q . . ." 320px
     "y y r r r" 500px
@@ -699,6 +735,10 @@
     grid-area: y;
 }
 
+.pbox26{
+    grid-area: z;
+}
+
 /*Patricia Text*/
 
 .pbox19{
@@ -723,6 +763,10 @@
 
 .pbox24{
     grid-area: x;
+}
+
+.pbox27{
+    grid-area: zz;
 }
 
 /*Image Formatting*/
@@ -888,13 +932,14 @@ img.pcircle-blue{
         "a c" 350px
         "d c" 180px
         "d e" 205px
-        "g e" 180px
-        "g h" 320px
-        ". h" 320px
+        "g e" 205px
+        "g h" 205px
+        ". h" 205px
         "f f" 350px
         "i u" 205px
         "i u" 205px
-        "v j" 320px
+        "zz z" 205px
+        "j v" 320px
         "k k" 205px
         "m m" 400px
         "l l" 205px
@@ -905,8 +950,9 @@ img.pcircle-blue{
         "w p" 205px
         "q q" 320px
         "r r" 400px
-        "x x" 180px
-    ;
+        "y y" 400px
+        "x x" 50px
+        ;
     }
 
     .plargecircle{
