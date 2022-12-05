@@ -1581,13 +1581,6 @@ img.pcircle-blue{
     gap: 80px;
 }
 
-.dotIndicators.active{
-    height: 56px;
-    width: 26px;
-    margin: 0 2px;
-    background: #4A4E69;
-    border-radius: 50%;
-}
 
 .dotIndicators{
     height: 22px;
@@ -1595,6 +1588,20 @@ img.pcircle-blue{
     margin: 0 2px;
     background: #F2E9E4;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.dotIndicators:hover{
+    background: #C9ADA7;
+}
+
+.dotIndicatorsActive{
+    height: 22px;
+    width: 56px;
+    margin: 0 2px;
+    background: #C9ADA7;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .mEducationImage{
@@ -1657,6 +1664,14 @@ img.pcircle-blue{
 
 .mEducationHeader{
     margin: 0;
+}
+
+.mNext:hover{
+    cursor: pointer;
+}
+
+.mPrev:hover{
+    cursor: pointer;
 }
 
 .mDownArrow3{
@@ -1745,17 +1760,13 @@ img.pcircle-blue{
     background-color: #F2E9E4;
 }
 
-.mPerContainer{
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
 .mhovertext{
     position: absolute;
     bottom: 8px;
     right: 9vw;
     z-index: 10;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .mhovertextMeditation{
@@ -1764,6 +1775,9 @@ img.pcircle-blue{
     right: 9vw;
     z-index: 10;
     color: #000000;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 750;
 }
 
 .mPerBox{
@@ -1772,7 +1786,6 @@ img.pcircle-blue{
     object-fit: cover;
     border-radius: 50px;
 }
-
 
 .mPerWorld{
     grid-area: a;
@@ -1814,10 +1827,133 @@ img.pcircle-blue{
     padding-bottom: 20px;
 }
 
+.mOverlay1{
+    grid-area: a;
+    transition: 300ms;
+    opacity: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 3px;
+}
+
+.mOverlay2{
+    grid-area: b;
+    transition: 300ms;
+    opacity: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 3px;
+}
+
+.mOverlay3{
+    grid-area: c;
+    transition: 300ms;
+    opacity: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 3px;
+}
+
+.mOverlay4{
+    grid-area: d;
+    transition: 300ms;
+    opacity: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 3px;
+}
+
+.mOverlay5{
+    grid-area: e;
+    transition: 300ms;
+    opacity: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 3px;
+}
+
+.mOverlay6{
+    grid-area: f;
+    transition: 300ms;
+    opacity: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 3px;
+}
+
+.mOverlayProp{
+    width: 320px;
+    height: 350px;
+    border-radius: 50px;
+    background-color: #22223B;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mOverlayActive{
+    opacity: 1;
+    z-index: 10;
+}
+
+.mOverlayHeader{
+    font-size: 32px;
+    color: #F2E9E4;
+    padding-left: 30px;
+}
+
+.mOverlayText{
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #F2E9E4;
+}
+
+.mOverlayLink{
+    font-size: 16px;
+    font-weight: 550;
+    background-color: #F2E9E4;
+    border-radius: 10px;
+    padding: 15px 30px;
+    border: none;
+    margin-left: 150px;
+}
+
+.mOverlayLink:hover{
+    box-shadow: 2px 5px 10px #4A4A54;
+    transition: 300ms;
+}
+
+.mOverlayClose{
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 60px;
+    color: #F2E9E4;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .mDownArrow4{
     position: absolute;
     right: 3vw;
     top: 3650px;
+}
+
+.mPerContainer{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.mAP{
+    text-decoration: none;
+    color: #22223B;
 }
 
 @media only screen and (max-width: 1023px) {
