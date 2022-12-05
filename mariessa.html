@@ -84,21 +84,21 @@
         <h1 class="mEducationHeader">Education</h1>
         <div class="mEducationCarousel">
             <div class="mEducationText">
-                <h2 class="mEduCarHeader">British Columbia Institute of Education</h2>
+                <h2 id="mEducationHeader" class="mEduCarHeader">British Columbia Institute of Technology</h2>
                 <div class="mEduCarText">
-                    <p>Digital Design and Development</p>
-                    <p>September 2021 - May 2023</p>
-                    <p>Learning about UI and UX design as well as web and app development. Focus on website design and coding.</p>
+                    <p id="mEducationText1">Digital Design and Development</p>
+                    <p id="mEducationText2">September 2021 - May 2023</p>
+                    <p id="mEducationText3">Learning about UI and UX design as well as web and app development. Focus on website design and coding.</p>
                 </div>
             </div>
             <div class="mEducationImageAndControls">
-                <img class="mEducationImage" src="Images/mariessa/mBCIT.jpg" alt="">
+                <img id="mEducationImage" class="mEducationImage" src="Images/mariessa/mBCIT.jpg" alt="">
                 <div class="mEducationCarouselControl">
-                    <a class="mprev" onclick="changeSlides(-1)"><img src="Images/mariessa/mLeftArrow.svg" alt=""></a>
-                    <span class="dotIndicators" onclick="currentSlide(1)"></span>
-                    <span class="dotIndicators" onclick="currentSlide(2)"></span>
-                    <span class="dotIndicators" onclick="currentSlide(3)"></span>
-                    <a class="mnext" onclick="changeSlides(-1)"><img src="Images/mariessa/mRightArrow.svg" alt=""></a>
+                    <a onclick="lastSlide()" class="mPrev"><img src="Images/mariessa/mLeftArrow.svg" alt=""></a>
+                    <span onclick="selectDot1()" id="mEduDot1" class="dotIndicators dotIndicatorsActive"></span>
+                    <span onclick="selectDot2()" id="mEduDot2" class="dotIndicators"></span>
+                    <span onclick="selectDot3()" id="mEduDot3" class="dotIndicators"></span>
+                    <a onclick="nextSlide()" class="mNext"><img src="Images/mariessa/mRightArrow.svg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -106,33 +106,75 @@
     <a class="mDownArrow3" href="#mPersonalProjects"><img src="Images/mariessa/mDownArrow.svg" alt=""></a>
 </div>
 
-
 <div id="mPersonalProjects" class="mPersonalProjects">
     <h1 class="mPersonalHeader">Personal Projects</h1>
     <div class="mPersonalGrid">  
-        <div class="mPerContainer">
-            <img class="mPerWorld mPerBox" src="Images/mariessa/mMyWorldDrawing.jpg" alt="">
-            <p class="mhovertext">Hover to Learn More</p>
+        <div class="mPerContainer mPerWorld">
+            <img class="mPerBox" src="Images/mariessa/mMyWorldDrawing.jpg" alt="">
+            <p onclick="overlay1Control()" class="mhovertext">Click to Learn More</p>
         </div>
-        <div class="mPerContainer">
-            <img class="mPerSight mPerBox" src="Images/mariessa/mSightDrawing.jpg" alt="">
-            <p class="mhovertext">Hover to Learn More</p>
+        <div id="mOverlay1" class="mOverlay1">
+            <div class="mOverlayProp">
+            <h2 class="mOverlayHeader">Vector Drawing</h2>
+            <p class="mOverlayText" >Drawing of "My World" inspired by a picture of my husband and I at a lookout on Sumas Mountain in Abbotsford.</p>
+            <p onclick="overlay1Control()" class="mOverlayClose">Close</p>
         </div>
-        <div class="mPerContainer">
-            <img class="mPerBook mPerBox" src="Images/mariessa/mBookCover.jpg" alt="">
-            <p class="mhovertext">Hover to Learn More</p>
         </div>
-        <div class="mPerContainer">
-            <img class="mPerMeditation mPerBox" src="Images/mariessa/mMeditationPage.jpg" alt="">
-            <p class="mhovertextMeditation">Hover to Learn More</p>
+        <div class="mPerContainer mPerSight">
+            <img class="mPerBox" src="Images/mariessa/mSightDrawing.jpg" alt="">
+            <p onclick="overlay2Control()" class="mhovertext">Click to Learn More</p>
         </div>
-        <div class="mPerContainer">
-            <img class="mPerColor mPerBox" src="Images/mariessa/mColorImage.jpg" alt="">
-            <p class="mhovertext">Hover to Learn More</p>
+        <div id="mOverlay2" class="mOverlay2">
+            <div class="mOverlayProp">
+            <h2 class="mOverlayHeader">Realistic Vector Drawing</h2>
+            <p class="mOverlayText" >Drawing of an Axcel Recurve Sight. This is a piece of Olympic Recurve equipment used in competitive archery.</p>
+            <p onclick="overlay2Control()" class="mOverlayClose">Close</p>
         </div>
-        <div class="mPerContainer">
-            <img class="mPerLandscape mPerBox" src="Images/mariessa/mLandscapeShapes.jpg" alt="">
-            <p class="mhovertext">Hover to Learn More</p>
+        </div>
+        <div class="mPerContainer mPerBook">
+            <img class="mPerBox" src="Images/mariessa/mBookCover.jpg" alt="">
+            <p onclick="overlay3Control()" class="mhovertext">Click to Learn More</p>
+        </div>
+        <div id="mOverlay3" class="mOverlay3">
+            <div class="mOverlayProp">
+            <h2 class="mOverlayHeader">Book Cover</h2>
+            <p class="mOverlayText" >A book cover made with Photoshop. Inspired by the isolation people felt during the Covid-19 Pandemic.</p>
+            <p onclick="overlay3Control()" class="mOverlayClose">Close</p>
+        </div>
+        </div>
+        <div class="mPerContainer mPerMeditation">
+            <img class="mPerBox" src="Images/mariessa/mMeditationPage.jpg" alt="">
+            <p onclick="overlay4Control()" class="mhovertextMeditation">Click to Learn More</p>
+        </div>
+        <div id="mOverlay4" class="mOverlay4">
+            <div class="mOverlayProp">
+            <h2 class="mOverlayHeader">Zen Meditation Website</h2>
+            <p class="mOverlayText" >Website coded with HTML and CSS. The site is for a made up Meditation company called Zen.</p>
+            <button class="mOverlayLink"><a class="mAP" href="https://mariessa-pinto.github.io/Comp-1170---Team-Project/Website/meditation-page.html">Visit Site</a></button>
+            <p onclick="overlay4Control()" class="mOverlayClose">Close</p>
+        </div>
+        </div>
+        <div class="mPerContainer mPerColor">
+            <img class="mPerBox" src="Images/mariessa/mColorImage.jpg" alt="">
+            <p onclick="overlay5Control()" class="mhovertext">Click to Learn More</p>
+        </div>
+        <div id="mOverlay5" class="mOverlay5">
+            <div class="mOverlayProp">
+            <h2 class="mOverlayHeader">Colorized B&W Picture</h2>
+            <p class="mOverlayText" >This is an image of my Great Grandpa colorized using Photoshop.</p>
+            <p onclick="overlay5Control()" class="mOverlayClose">Close</p>
+        </div>
+    </div>
+        <div class="mPerContainer mPerLandscape">
+            <img class="mPerBox" src="Images/mariessa/mLandscapeShapes.jpg" alt="">
+            <p onclick="overlay6Control()" class="mhovertext">Click to Learn More</p>
+        </div>
+        <div id="mOverlay6" class="mOverlay6">
+            <div class="mOverlayProp">
+            <h2 class="mOverlayHeader">Vector Drawing with Shapes</h2>
+            <p class="mOverlayText" >Drawing of a landscape using shapes provided to us.</p>
+            <p onclick="overlay6Control()" class="mOverlayClose">Close</p>
+        </div>
         </div>
     </div>  
     <a class="mDownArrow4" href="#mHobbies"><img src="Images/mariessa/mDownArrow.svg" alt=""></a>
@@ -145,20 +187,20 @@
     <div class="mHobTopBack"></div>
         <div class="mHobbiesContainer">
                 <div class="mHobbiesText">
-                <h2 class="mHobbiesTitle">Hiking</h2>
-                <p class="mHobbiesDesc">I enjoy hiking trails primarily around the Fraser Valley. I also enjoy hiking on Vancouver Island and the Sunshine Coast. My absolute favorite trail is Mount Cheam in Chilliwack, BC.
+                <h2 id="mHobbiesHeader" class="mHobbiesTitle">Hiking</h2>
+                <p id="mHobbiesText" class="mHobbiesDesc">I enjoy hiking trails primarily around the Fraser Valley. I also enjoy hiking on Vancouver Island and the Sunshine Coast. My absolute favorite trail is Mount Cheam in Chilliwack, BC.
                 </div>
                 <div class="mHobbiesContainerAlign">
-            <img class="mHobbiesImage" src="Images/mariessa/mHiking.JPG" alt="">
+            <img id="mHobbiesImage" class="mHobbiesImage" src="Images/mariessa/mHiking.JPG" alt="">
                 <div class="mHobbiesCarouselControl">
-                    <a class="mprev" onclick="changeSlides(-1)"><img src="Images/mariessa/mLeftArrow.svg" alt=""></a>
-                    <span class="dotIndicators" onclick="currentSlide(1)"></span>
-                    <span class="dotIndicators" onclick="currentSlide(2)"></span>
-                    <span class="dotIndicators" onclick="currentSlide(3)"></span>
-                    <span class="dotIndicators" onclick="currentSlide(4)"></span>
-                    <span class="dotIndicators" onclick="currentSlide(5)"></span>
-                    <span class="dotIndicators" onclick="currentSlide(6)"></span>
-                    <a class="mnext" onclick="changeSlides(-1)"><img src="Images/mariessa/mRightArrow.svg" alt=""></a>
+                    <a onclick="lastHobby()" class="mPrev"><img src="Images/mariessa/mLeftArrow.svg" alt=""></a>
+                    <span onclick="hobSelectDot1()" id="mHobDot1" class="dotIndicators dotIndicatorsActive"></span>
+                    <span onclick="hobSelectDot2()" id="mHobDot2" class="dotIndicators"></span>
+                    <span onclick="hobSelectDot3()" id="mHobDot3" class="dotIndicators"></span>
+                    <span onclick="hobSelectDot4()" id="mHobDot4" class="dotIndicators"></span>
+                    <span onclick="hobSelectDot5()" id="mHobDot5" class="dotIndicators"></span>
+                    <span onclick="hobSelectDot6()" id="mHobDot6" class="dotIndicators"></span>
+                    <a onclick="nextHobby()" class="mNext"><img src="Images/mariessa/mRightArrow.svg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -180,16 +222,366 @@
 
 <script>
 
+/* Nav Bar Dropdown*/
+
 var navMobile = document.getElementById("mNames");
-var mBar1 = document.getElementById("mBar1")
-var mBar2 = document.getElementById("mBar2")
-var mBar3 = document.getElementById("mBar3")
+var mBar1 = document.getElementById("mBar1");
+var mBar2 = document.getElementById("mBar2");
+var mBar3 = document.getElementById("mBar3");
 
 function menuToggle(){
     mNames.classList.toggle("mNamesActive");
     mBar1.classList.toggle("mChange1");
     mBar2.classList.toggle("mChange2");
     mBar3.classList.toggle("mChange3");
+}
+
+/*Education Carousel*/
+
+var header = document.getElementById("mEducationHeader");
+var bodyText1 = document.getElementById("mEducationText1");
+var bodyText2 = document.getElementById("mEducationText2");
+var bodyText3 = document.getElementById("mEducationText3");
+var image = document.getElementById("mEducationImage")
+var EduDot1 = document.getElementById("mEduDot1")
+var EduDot2 = document.getElementById("mEduDot2")
+var EduDot3 = document.getElementById("mEduDot3")
+
+
+var mEducation = new Object();
+    mEducation.header = ["British Columbia Institute of Technology", "Simon Fraser University", "Laval University"],
+    mEducation.bodyText1 = ["Digital Design and Development", "Bachelor of Arts - French Cohort Program", "Exchange"],
+    mEducation.bodyText2 = ["September 2021 - May 2023", "September 2016 - September 2021", "September 2018 - December 2018"],
+    mEducation.bodyText3 = ["Learning about UI and UX design as well as web and app development. Focus on website design and coding.", "Major in French - Minor in Political Science - Dean's Honour Roll - Fall 2021", "Studied french for one semester at Laval University in Quebec City, Quebec."],
+    mEducation.image = ["Images/mariessa/mBCIT.jpg", "Images/mariessa/mSFU.jpg", "Images/mariessa/mLaval.jpg"]
+
+var index = 0;
+
+function nextSlide(){
+    index += 1;
+    if (index == mEducation.header.length){
+        index = 0;
+    }else{}
+
+    if(index == 0){
+        EduDot1.classList.add("dotIndicatorsActive");
+        EduDot2.classList.remove("dotIndicatorsActive");
+        EduDot3.classList.remove("dotIndicatorsActive");
+    }else if(index == 1){
+        EduDot1.classList.remove("dotIndicatorsActive");
+        EduDot2.classList.add("dotIndicatorsActive");
+        EduDot3.classList.remove("dotIndicatorsActive");
+    }else if(index == 2){
+        EduDot1.classList.remove("dotIndicatorsActive");
+        EduDot2.classList.remove("dotIndicatorsActive");
+        EduDot3.classList.add("dotIndicatorsActive");
+    }else{}
+
+    image.src = mEducation.image[index];
+    bodyText1.innerText = `${mEducation.bodyText1[index]}`;
+    bodyText2.innerText = `${mEducation.bodyText2[index]}`;
+    bodyText3.innerText = `${mEducation.bodyText3[index]}`;
+    header.innerText = `${mEducation.header[index]}`;
+}
+
+function lastSlide(){
+    index -= 1;
+    if (index == mEducation.header.length){
+        index = 0;
+    }else if(index < 0){
+        index = mEducation.header.length-1
+    }else{}
+
+    if(index == 0){
+        EduDot1.classList.add("dotIndicatorsActive");
+        EduDot2.classList.remove("dotIndicatorsActive");
+        EduDot3.classList.remove("dotIndicatorsActive");
+    }else if(index == 1){
+        EduDot1.classList.remove("dotIndicatorsActive");
+        EduDot2.classList.add("dotIndicatorsActive");
+        EduDot3.classList.remove("dotIndicatorsActive");
+    }else if(index == 2){
+        EduDot1.classList.remove("dotIndicatorsActive");
+        EduDot2.classList.remove("dotIndicatorsActive");
+        EduDot3.classList.add("dotIndicatorsActive");
+    }else{}
+
+    image.src = mEducation.image[index];
+    bodyText1.innerText = `${mEducation.bodyText1[index]}`;
+    bodyText2.innerText = `${mEducation.bodyText2[index]}`;
+    bodyText3.innerText = `${mEducation.bodyText3[index]}`;
+    header.innerText = `${mEducation.header[index]}`;
+}
+
+function selectDot1(){
+    image.src = mEducation.image[0];
+    bodyText1.innerText = `${mEducation.bodyText1[0]}`;
+    bodyText2.innerText = `${mEducation.bodyText2[0]}`;
+    bodyText3.innerText = `${mEducation.bodyText3[0]}`;
+    header.innerText = `${mEducation.header[0]}`;
+    EduDot1.classList.add("dotIndicatorsActive");
+    EduDot2.classList.remove("dotIndicatorsActive");
+    EduDot3.classList.remove("dotIndicatorsActive");
+}
+
+function selectDot2(){
+    image.src = mEducation.image[1];
+    bodyText1.innerText = `${mEducation.bodyText1[1]}`;
+    bodyText2.innerText = `${mEducation.bodyText2[1]}`;
+    bodyText3.innerText = `${mEducation.bodyText3[1]}`;
+    header.innerText = `${mEducation.header[1]}`;
+    EduDot1.classList.remove("dotIndicatorsActive");
+    EduDot2.classList.add("dotIndicatorsActive");
+    EduDot3.classList.remove("dotIndicatorsActive");
+}
+
+function selectDot3(){
+    image.src = mEducation.image[2];
+    bodyText1.innerText = `${mEducation.bodyText1[2]}`;
+    bodyText2.innerText = `${mEducation.bodyText2[2]}`;
+    bodyText3.innerText = `${mEducation.bodyText3[2]}`;
+    header.innerText = `${mEducation.header[2]}`;
+    EduDot1.classList.remove("dotIndicatorsActive");
+    EduDot2.classList.remove("dotIndicatorsActive");
+    EduDot3.classList.add("dotIndicatorsActive");
+}
+
+/*Personal Projects Click*/
+
+var overlay1 = document.getElementById("mOverlay1");
+var overlay2 = document.getElementById("mOverlay2");
+var overlay3 = document.getElementById("mOverlay3");
+var overlay4 = document.getElementById("mOverlay4");
+var overlay5 = document.getElementById("mOverlay5");
+var overlay6 = document.getElementById("mOverlay6");
+
+
+function overlay1Control(){
+    overlay1.classList.toggle("mOverlayActive");
+}
+
+function overlay2Control(){
+    overlay2.classList.toggle("mOverlayActive");
+}
+
+function overlay3Control(){
+    overlay3.classList.toggle("mOverlayActive");
+}
+
+function overlay4Control(){
+    overlay4.classList.toggle("mOverlayActive");
+}
+
+function overlay5Control(){
+    overlay5.classList.toggle("mOverlayActive");
+}
+
+function overlay6Control(){
+    overlay6.classList.toggle("mOverlayActive");
+}
+
+
+/*Hobbies Carousel*/
+
+var hobHeader = document.getElementById("mHobbiesHeader");
+var bodyText = document.getElementById("mHobbiesText");
+var hobImage = document.getElementById("mHobbiesImage")
+var hobDot1 = document.getElementById("mHobDot1")
+var hobDot2 = document.getElementById("mHobDot2")
+var hobDot3 = document.getElementById("mHobDot3")
+var hobDot4 = document.getElementById("mHobDot4")
+var hobDot5 = document.getElementById("mHobDot5")
+var hobDot6 = document.getElementById("mHobDot6")
+
+var mHobbies = new Object();
+    mHobbies.hobHeader = ["Hiking", "Trail Running", "Reading", "BikePacking", "Camping", "Gaming"],
+    mHobbies.bodyText = ["I enjoy hiking trails primarily around the Fraser Valley. I also enjoy hiking on Vancouver Island and the Sunshine Coast. My absolute favorite trail is Mount Cheam in Chilliwack, BC.", "I enjoy trail running many local trails in Abbotsford and Chilliwack, BC. Nothing beats the gorgeous views from mountain tops where we often stop to catch our breaths.", "I am an avid reader. Although I dabble in all genres, my favorite is by far Fantasy. Favorite book of all time is The Name of the Wind by Patrick Rothfuss.", "One of my absolute favorite outdoor activities is bikepacking. My most memorable trip was a 4 day tour of Southern Vancouver Island and Salt Spring Island.", "There is nothing more relaxing than the ability to escape society for a bit and get out camping. I car camp, backpack and bikepack.", "I enjoy gaming in my downtime. Some of my favorite games include League of Legends, Breath of the Wild and Overcooked."],
+    mHobbies.hobImage = ["Images/mariessa/mHiking.JPG", "Images/mariessa/mTrailRunning.jpg", "Images/mariessa/mReading.jpg", "Images/mariessa/mBikePacking.jpg", "Images/mariessa/mCamping.jpg", "Images/mariessa/mGalio.jpg"]
+
+var x = 0;
+
+    function nextHobby(){
+    x += 1;
+    if (x == mHobbies.hobHeader.length){
+        x = 0;
+    }else{}
+
+    if(x == 0){
+        hobDot1.classList.add("dotIndicatorsActive");
+        hobDot2.classList.remove("dotIndicatorsActive");
+        hobDot3.classList.remove("dotIndicatorsActive");
+        hobDot4.classList.remove("dotIndicatorsActive");
+        hobDot5.classList.remove("dotIndicatorsActive");
+        hobDot6.classList.remove("dotIndicatorsActive");
+    }else if(x == 1){
+        hobDot1.classList.remove("dotIndicatorsActive");
+        hobDot2.classList.add("dotIndicatorsActive");
+        hobDot3.classList.remove("dotIndicatorsActive");
+        hobDot4.classList.remove("dotIndicatorsActive");
+        hobDot5.classList.remove("dotIndicatorsActive");
+        hobDot6.classList.remove("dotIndicatorsActive");
+    }else if(x == 2){
+        hobDot1.classList.remove("dotIndicatorsActive");
+        hobDot2.classList.remove("dotIndicatorsActive");
+        hobDot3.classList.add("dotIndicatorsActive");
+        hobDot4.classList.remove("dotIndicatorsActive");
+        hobDot5.classList.remove("dotIndicatorsActive");
+        hobDot6.classList.remove("dotIndicatorsActive");
+    }else if(x == 3){
+        hobDot1.classList.remove("dotIndicatorsActive");
+        hobDot2.classList.remove("dotIndicatorsActive");
+        hobDot3.classList.remove("dotIndicatorsActive");
+        hobDot4.classList.add("dotIndicatorsActive");
+        hobDot5.classList.remove("dotIndicatorsActive");
+        hobDot6.classList.remove("dotIndicatorsActive");
+    }else if(x == 4){
+        hobDot1.classList.remove("dotIndicatorsActive");
+        hobDot2.classList.remove("dotIndicatorsActive");
+        hobDot3.classList.remove("dotIndicatorsActive");
+        hobDot4.classList.remove("dotIndicatorsActive");
+        hobDot5.classList.add("dotIndicatorsActive");
+        hobDot6.classList.remove("dotIndicatorsActive");
+    }else if(x == 5){
+        hobDot1.classList.remove("dotIndicatorsActive");
+        hobDot2.classList.remove("dotIndicatorsActive");
+        hobDot3.classList.remove("dotIndicatorsActive");
+        hobDot4.classList.remove("dotIndicatorsActive");
+        hobDot5.classList.remove("dotIndicatorsActive");
+        hobDot6.classList.add("dotIndicatorsActive");
+    }else{}
+
+    hobImage.src = mHobbies.hobImage[x];
+    bodyText.innerText = `${mHobbies.bodyText[x]}`;
+    hobHeader.innerText = `${mHobbies.hobHeader[x]}`;
+}
+
+function lastHobby(){
+    x -= 1;
+    if (x == mHobbies.hobHeader.length){
+        x = 0;
+    }else if(x < 0){
+        x = mHobbies.hobHeader.length-1
+    }else{}
+
+    if(x == 0){
+        hobDot1.classList.add("dotIndicatorsActive");
+        hobDot2.classList.remove("dotIndicatorsActive");
+        hobDot3.classList.remove("dotIndicatorsActive");
+        hobDot4.classList.remove("dotIndicatorsActive");
+        hobDot5.classList.remove("dotIndicatorsActive");
+        hobDot6.classList.remove("dotIndicatorsActive");
+    }else if(x == 1){
+        hobDot1.classList.remove("dotIndicatorsActive");
+        hobDot2.classList.add("dotIndicatorsActive");
+        hobDot3.classList.remove("dotIndicatorsActive");
+        hobDot4.classList.remove("dotIndicatorsActive");
+        hobDot5.classList.remove("dotIndicatorsActive");
+        hobDot6.classList.remove("dotIndicatorsActive");
+    }else if(x == 2){
+        hobDot1.classList.remove("dotIndicatorsActive");
+        hobDot2.classList.remove("dotIndicatorsActive");
+        hobDot3.classList.add("dotIndicatorsActive");
+        hobDot4.classList.remove("dotIndicatorsActive");
+        hobDot5.classList.remove("dotIndicatorsActive");
+        hobDot6.classList.remove("dotIndicatorsActive");
+    }else if(x == 3){
+        hobDot1.classList.remove("dotIndicatorsActive");
+        hobDot2.classList.remove("dotIndicatorsActive");
+        hobDot3.classList.remove("dotIndicatorsActive");
+        hobDot4.classList.add("dotIndicatorsActive");
+        hobDot5.classList.remove("dotIndicatorsActive");
+        hobDot6.classList.remove("dotIndicatorsActive");
+    }else if(x == 4){
+        hobDot1.classList.remove("dotIndicatorsActive");
+        hobDot2.classList.remove("dotIndicatorsActive");
+        hobDot3.classList.remove("dotIndicatorsActive");
+        hobDot4.classList.remove("dotIndicatorsActive");
+        hobDot5.classList.add("dotIndicatorsActive");
+        hobDot6.classList.remove("dotIndicatorsActive");
+    }else if(x == 5){
+        hobDot1.classList.remove("dotIndicatorsActive");
+        hobDot2.classList.remove("dotIndicatorsActive");
+        hobDot3.classList.remove("dotIndicatorsActive");
+        hobDot4.classList.remove("dotIndicatorsActive");
+        hobDot5.classList.remove("dotIndicatorsActive");
+        hobDot6.classList.add("dotIndicatorsActive");
+    }else{}
+
+    hobImage.src = mHobbies.hobImage[x];
+    bodyText.innerText = `${mHobbies.bodyText[x]}`;
+    hobHeader.innerText = `${mHobbies.hobHeader[x]}`;
+}
+
+function hobSelectDot1(){
+    hobImage.src = mHobbies.hobImage[0];
+    bodyText.innerText = `${mHobbies.bodyText[0]}`;
+    hobHeader.innerText = `${mHobbies.hobHeader[0]}`;
+    hobDot1.classList.add("dotIndicatorsActive");
+    hobDot2.classList.remove("dotIndicatorsActive");
+    hobDot3.classList.remove("dotIndicatorsActive");
+    hobDot4.classList.remove("dotIndicatorsActive");
+    hobDot5.classList.remove("dotIndicatorsActive");
+    hobDot6.classList.remove("dotIndicatorsActive");
+}
+
+function hobSelectDot2(){
+    hobImage.src = mHobbies.hobImage[1];
+    bodyText.innerText = `${mHobbies.bodyText[1]}`;
+    hobHeader.innerText = `${mHobbies.hobHeader[1]}`;
+    hobDot1.classList.remove("dotIndicatorsActive");
+    hobDot2.classList.add("dotIndicatorsActive");
+    hobDot3.classList.remove("dotIndicatorsActive");
+    hobDot4.classList.remove("dotIndicatorsActive");
+    hobDot5.classList.remove("dotIndicatorsActive");
+    hobDot6.classList.remove("dotIndicatorsActive");
+}
+
+function hobSelectDot3(){
+    hobImage.src = mHobbies.hobImage[2];
+    bodyText.innerText = `${mHobbies.bodyText[2]}`;
+    hobHeader.innerText = `${mHobbies.hobHeader[2]}`;
+    hobDot1.classList.remove("dotIndicatorsActive");
+    hobDot2.classList.remove("dotIndicatorsActive");
+    hobDot3.classList.add("dotIndicatorsActive");
+    hobDot4.classList.remove("dotIndicatorsActive");
+    hobDot5.classList.remove("dotIndicatorsActive");
+    hobDot6.classList.remove("dotIndicatorsActive");
+}
+
+function hobSelectDot4(){
+    hobImage.src = mHobbies.hobImage[3];
+    bodyText.innerText = `${mHobbies.bodyText[3]}`;
+    hobHeader.innerText = `${mHobbies.hobHeader[3]}`;
+    hobDot1.classList.remove("dotIndicatorsActive");
+    hobDot2.classList.remove("dotIndicatorsActive");
+    hobDot3.classList.remove("dotIndicatorsActive");
+    hobDot4.classList.add("dotIndicatorsActive");
+    hobDot5.classList.remove("dotIndicatorsActive");
+    hobDot6.classList.remove("dotIndicatorsActive");
+}
+
+function hobSelectDot5(){
+    hobImage.src = mHobbies.hobImage[4];
+    bodyText.innerText = `${mHobbies.bodyText[4]}`;
+    hobHeader.innerText = `${mHobbies.hobHeader[4]}`;
+    hobDot1.classList.remove("dotIndicatorsActive");
+    hobDot2.classList.remove("dotIndicatorsActive");
+    hobDot3.classList.remove("dotIndicatorsActive");
+    hobDot4.classList.remove("dotIndicatorsActive");
+    hobDot5.classList.add("dotIndicatorsActive");
+    hobDot6.classList.remove("dotIndicatorsActive");
+}
+
+function hobSelectDot6(){
+    hobImage.src = mHobbies.hobImage[5];
+    bodyText.innerText = `${mHobbies.bodyText[5]}`;
+    hobHeader.innerText = `${mHobbies.hobHeader[5]}`;
+    hobDot1.classList.remove("dotIndicatorsActive");
+    hobDot2.classList.remove("dotIndicatorsActive");
+    hobDot3.classList.remove("dotIndicatorsActive");
+    hobDot4.classList.remove("dotIndicatorsActive");
+    hobDot5.classList.remove("dotIndicatorsActive");
+    hobDot6.classList.add("dotIndicatorsActive");
 }
 
 </script>
