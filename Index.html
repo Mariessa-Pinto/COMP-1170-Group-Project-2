@@ -32,16 +32,17 @@
         <img src="Images/Index/anika.png" alt="" class="iheadshot" id="slide">
         <div class="imainrectangle">
             <div class="itextbox">
-                <p id="ibiotext">"Bio 1".</p>
-                <button id="imeetName" onclick="">Meet Anika</button>
+                <p class="iBioBox" id="ibiotext">"Anika is an ardent traveller who is in her first-year of BCIT's D3 program."</p>
+                
+                <a id="ichangeSource" href="anika.html"><button id="imeetName"> Meet Anika</button></a>
                 <div class="icreatorcircle">
                     <button class="iarrow" onclick="lastSlide()"><i class="fa fa-arrow-circle-o-left fa-2x" aria-hidden="true"></i></i></button>
                     <!-- <button class="iarrow-left" onclick="lastSlide()"><img class="ileftarrow" src="Images/leftarrow.svg" alt=""></button> -->
-                    <div class="ianikaCircle" id="ianikaCircle"></div>
-                    <div class="ikyleCircle"></div>
-                    <div class="imariessaCircle"></div>
-                    <div class="ipatriciaCircle"></div>
-                    <div class="iyanjunCircle"></div>
+                    <div class="ianikaCircle selectedCircle" id="ianikaCircle" onclick="indicatorsSelectAnika()"></div>
+                    <div class="ikyleCircle" id="ikyleCircle" onclick="indicatorsSelectKyle()"></div>
+                    <div class="imariessaCircle" id="imariessaCircle" onclick="indicatorsSelectMariessa()"></div>
+                    <div class="ipatriciaCircle" id="ipatriciaCircle" onclick="indicatorsSelectPatricia()"></div>
+                    <div class="iyanjunCircle" id="iyanjunCircle" onclick="indicatorsSelectYanjun()"></div>
                     <!-- <button class="iarrow-right" onclick="nextSlide()"><img class="irightarrow" src="Images/rightarrow.svg" alt=""></button> -->
                     <button class="iarrow" onclick="nextSlide()"><i class="fa fa-arrow-circle-o-right fa-2x" aria-hidden="true"></i></button>
                 </div>
@@ -69,6 +70,13 @@
         var imeetName = document.getElementById('imeetName');
         var ibioText = document.getElementById('ibioText');
         var ianikaCircle = document.getElementById('ianikaCircle')
+        var ikyleCircle = document.getElementById('ikyleCircle')
+        var imariessaCircle = document.getElementById('imariessaCircle')
+        var ipatriciaCircle = document.getElementById('ipatriciaCircle')
+        var iyanjunCircle = document.getElementById('iyanjunCircle')
+        var ichangeSource = document.getElementById('ichangeSource')
+
+        var index = 0;
 
         var imageNames = [
             "Images/Index/anika.png",
@@ -86,36 +94,131 @@
         ];
 
         var bios = [
-            "Bio 1", //if editing this, also need to update in html
-            "Bio 2",
-            "Bio 3",
-            "Bio 4",
-            "Bio 5",
+            "Anika is an ardent traveller who is in her first-year of BCIT's D3 program.", //if editing this, also need to update in html
+            "Kyle is a self taught screen printer, graphic designer and a 1st year D3 student.",
+            "Mariessa is a outdoor enthusiast interested in digital design and development.",
+            "Patricia is an avid lover of cats and also a first-year student in BCIT's D3 program.",
+            "Yanjun is a video game player and this is her first-year in BCIT D3 program.",
         ];
 
-        //var sliderCircle = "selectedCircle";
+        var htmlSources = [
+            "anika.html",
+            "kyle.html",
+            "mariessa.html",
+            "patricia.html",
+            "yanjun.html",
+        ];
 
-        var index = 0;
+
+        
+
+        /* Dots Functions*/
+
+        function indicatorsSelectAnika(){
+            slide.src = imageNames[0];
+            imeetName.innerText = `Meet ${meetNames[0]}`;
+            ibiotext.innerText = `${bios[0]}`;
+            ianikaCircle.classList.add("selectedCircle");
+            ikyleCircle.classList.remove("selectedCircle");
+            imariessaCircle.classList.remove("selectedCircle");
+            ipatriciaCircle.classList.remove("selectedCircle");
+            iyanjunCircle.classList.remove("selectedCircle");
+            ichangeSource.href = htmlSources[0];
+        }
+
+        function indicatorsSelectKyle(){
+            slide.src = imageNames[1];
+            imeetName.innerText = `Meet ${meetNames[1]}`;
+            ibiotext.innerText = `${bios[1]}`;
+            ianikaCircle.classList.remove("selectedCircle");
+            ikyleCircle.classList.add("selectedCircle");
+            imariessaCircle.classList.remove("selectedCircle");
+            ipatriciaCircle.classList.remove("selectedCircle");
+            iyanjunCircle.classList.remove("selectedCircle");
+            ichangeSource.href = htmlSources[1];
+        }
+
+        function indicatorsSelectMariessa(){
+            slide.src = imageNames[2];
+            imeetName.innerText = `Meet ${meetNames[2]}`;
+            ibiotext.innerText = `${bios[2]}`;
+            ianikaCircle.classList.remove("selectedCircle");
+            ikyleCircle.classList.remove("selectedCircle");
+            imariessaCircle.classList.add("selectedCircle");
+            ipatriciaCircle.classList.remove("selectedCircle");
+            iyanjunCircle.classList.remove("selectedCircle");
+            ichangeSource.href = htmlSources[2];
+        }
+
+        function indicatorsSelectPatricia(){
+            slide.src = imageNames[3];
+            imeetName.innerText = `Meet ${meetNames[3]}`;
+            ibiotext.innerText = `${bios[3]}`;
+            ianikaCircle.classList.remove("selectedCircle");
+            ikyleCircle.classList.remove("selectedCircle");
+            imariessaCircle.classList.remove("selectedCircle");
+            ipatriciaCircle.classList.add("selectedCircle");
+            iyanjunCircle.classList.remove("selectedCircle");
+            ichangeSource.href = htmlSources[3];
+        }
+
+        function indicatorsSelectYanjun(){
+            slide.src = imageNames[4];
+            imeetName.innerText = `Meet ${meetNames[4]}`;
+            ibiotext.innerText = `${bios[4]}`;
+            ianikaCircle.classList.remove("selectedCircle");
+            ikyleCircle.classList.remove("selectedCircle");
+            imariessaCircle.classList.remove("selectedCircle");
+            ipatriciaCircle.classList.remove("selectedCircle");
+            iyanjunCircle.classList.add("selectedCircle");
+            ichangeSource.href = htmlSources[4];
+        }
+
+
+        /* Arrow Functions and Dots changing*/
 
         function nextSlide() {
             index += 1;
             if (index == imageNames.length) {
                 index = 0;
             }
-            /*if(index == 0){
-                ianikaCircle.class = sliderCircle;
+
+            if(index == 0){
+                ianikaCircle.classList.add("selectedCircle");
+                ikyleCircle.classList.remove("selectedCircle");
+                imariessaCircle.classList.remove("selectedCircle");
+                ipatriciaCircle.classList.remove("selectedCircle");
+                iyanjunCircle.classList.remove("selectedCircle");
             }else if(index == 1){
-                ikyleCircle.class = sliderCircle;
+                ianikaCircle.classList.remove("selectedCircle");
+                ikyleCircle.classList.add("selectedCircle");
+                imariessaCircle.classList.remove("selectedCircle");
+                ipatriciaCircle.classList.remove("selectedCircle");
+                iyanjunCircle.classList.remove("selectedCircle");
             }else if(index == 2){
-                imariessaCircle.class = sliderCircle;
+                ianikaCircle.classList.remove("selectedCircle");
+                ikyleCircle.classList.remove("selectedCircle");
+                imariessaCircle.classList.add("selectedCircle");
+                ipatriciaCircle.classList.remove("selectedCircle");
+                iyanjunCircle.classList.remove("selectedCircle");
             }else if (index == 3){
-                ipatriciaCircle.class = sliderCircle;
+                ianikaCircle.classList.remove("selectedCircle");
+                ikyleCircle.classList.remove("selectedCircle");
+                imariessaCircle.classList.remove("selectedCircle");
+                ipatriciaCircle.classList.add("selectedCircle");
+                iyanjunCircle.classList.remove("selectedCircle");
             }else if (index == 4){
-                iyanjunCircle.class = sliderCircle;
-            }*/
+                ianikaCircle.classList.remove("selectedCircle");
+                ikyleCircle.classList.remove("selectedCircle");
+                imariessaCircle.classList.remove("selectedCircle");
+                ipatriciaCircle.classList.remove("selectedCircle");
+                iyanjunCircle.classList.add("selectedCircle");
+            }else{}
+
             slide.src = imageNames[index];
             imeetName.innerText = `Meet ${meetNames[index]}`;
             ibiotext.innerText = `${bios[index]}`;
+            ichangeSource.href = htmlSources[index];
         }
 
         function lastSlide() {
@@ -124,11 +227,48 @@
                 index = 0;
             } else if (index < 0) {
                 index = 4
-            }
+            }else{}
+
+            if(index == 0){
+                ianikaCircle.classList.add("selectedCircle");
+                ikyleCircle.classList.remove("selectedCircle");
+                imariessaCircle.classList.remove("selectedCircle");
+                ipatriciaCircle.classList.remove("selectedCircle");
+                iyanjunCircle.classList.remove("selectedCircle");
+            }else if(index == 1){
+                ianikaCircle.classList.remove("selectedCircle");
+                ikyleCircle.classList.add("selectedCircle");
+                imariessaCircle.classList.remove("selectedCircle");
+                ipatriciaCircle.classList.remove("selectedCircle");
+                iyanjunCircle.classList.remove("selectedCircle");
+            }else if(index == 2){
+                ianikaCircle.classList.remove("selectedCircle");
+                ikyleCircle.classList.remove("selectedCircle");
+                imariessaCircle.classList.add("selectedCircle");
+                ipatriciaCircle.classList.remove("selectedCircle");
+                iyanjunCircle.classList.remove("selectedCircle");
+            }else if (index == 3){
+                ianikaCircle.classList.remove("selectedCircle");
+                ikyleCircle.classList.remove("selectedCircle");
+                imariessaCircle.classList.remove("selectedCircle");
+                ipatriciaCircle.classList.add("selectedCircle");
+                iyanjunCircle.classList.remove("selectedCircle");
+            }else if (index == 4){
+                ianikaCircle.classList.remove("selectedCircle");
+                ikyleCircle.classList.remove("selectedCircle");
+                imariessaCircle.classList.remove("selectedCircle");
+                ipatriciaCircle.classList.remove("selectedCircle");
+                iyanjunCircle.classList.add("selectedCircle");
+            }else{}
+
+
             slide.src = imageNames[index];
             imeetName.innerText = `Meet ${meetNames[index]}`;
             ibiotext.innerText = `${bios[index]}`;
+            ichangeSource.href = htmlSources[index];
         }
+
+        
 
     </script>
 </body>
