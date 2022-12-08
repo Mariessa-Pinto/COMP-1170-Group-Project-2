@@ -9,75 +9,189 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b49f2d590b.js" crossorigin="anonymous"></script>
     </head>
 <body class="abody">
-    <div class="iNav">
-        <a class="iA" href="Index.html">HOME</a>
-        <div class="iNames">
-            <a class="iA" href="anika.html">Anika</a>
-            <a class="iA" href="kyle.html">Kyle</a>
-            <a class="iA" href="mariessa.html">Mariessa</a>
-            <a class="iA" href="patricia.html">Patricia</a>
-            <a class="iA" href="yanjun.html">YanJun</a>
+    <div class="aNav">
+        <a class="aA" href="Index.html">HOME</a>
+        <div id="aNames" class="aNames">
+            <a class="aA" href="anika.html">Anika</a>
+            <a class="aA" href="kyle.html">Kyle</a>
+            <a class="aA" href="mariessa.html">Mariessa</a>
+            <a class="aA" href="patricia.html">Patricia</a>
+            <a class="aA" href="yanjun.html">YanJun</a>
+        </div>
+        <div class="aHamContainer" onclick="menuToggle()">
+            <div id="aBar1" class="aHamburger"></div>
+            <div id="aBar2" class="aHamburger"></div>
+            <div id="aBar3" class="aHamburger"></div>
         </div>
     </div>
-
+    <div class="abodyalign">
     <div class="aprofile"> 
     <div class="aprofilepic">
         <img class="apic" src="images/anika.png">
-
+        <h3 class="aname">Anika Grewal</h3>
     </div>
     </div>
     <div class="aaboutbox">
     <div class="aaboutme">
         <h2 class="aabouttext">About Me</h2>
        <div class="aabcirclealign">
-        <div class="aaboutcircle"></div>
-        <div class="aaboutcircle"></div>
+        <div class="aaboutcircle"><img class="astudying" src="images/astudying.jpeg" alt="studying"></div>
+        <div class="aaboutcircle"><img class="auiux" src="images/aui.jpeg" alt="ui/ux designer"></div>
         <div class="aaboutcircle"><img class="atravelling" src="images/atravelling.jpeg"></div>
        </div>
        <div class="aabout">
         <div class="aaboutwords">
             <h4 class="aheader">BCIT Student</h4>
-            <p>BCIT loreum epson</p>
+            <p>Anika is in the Digital Design and Development program. She hopes to learn new skills of ui/ux design, coding languages, and graphic design.</p>
         </div>
         <div class="aaboutwords">
             <h4 class="aheader">UX/UI/Graphic Designer</h4>
-            <p>Designing loreum epson</p>
+            <p>Anika has started graphic designing 2 websites and 1 app in her program. She hopes, once she has graduated that this will help in her career path.</p>
         </div>
         <div class="aaboutwords">
             <h4 class="aheader">Traveller</h4>
-            <p>Travelling loreum epson</p>
+            <p>Anika loves to travel. She hopes one day to have touched her foot in, at least, every contientent.</p>
         </div>
        </div>
     </div>
+    
     </div>
 
    
     <div class="aprojects">
+       
         <h2 class="aprotext">My Projects</h2>
         <div class="afirstrow">
-            <div class="abox"><img class="abox1" src="images/avector.jpeg" alt="vector"></div>
-            <div class="abox"><img class="abox1" src="images/aprototype.jpeg" alt="prototypewebsite"></div>
-            <div class="abox"><img class="abox1" src="images/aposter.jpeg" alt="poster"></div>
+            <div class="abox">
+                <img class="abox1" src="images/avector.jpeg" alt="vector">
+                <div class="abox1align">
+                    <p class="aboxtext1">Hover to learn more</p>
+                    </div>
+                <div class="a1overlay">
+                <p class="aoverlaytext1">A realistic vector based drawing of a radio</p>
+                </div>
+            </div>
+            <div class="abox"><img class="abox2" src="images/aprototype.jpeg" alt="prototypewebsite">
+                <div class="abox1align">
+                <p class="aboxtext1">Hover to learn more</p>
+                </div>
+                <div class="a2overlay">
+                    <p class="aoverlaytext2">A hi-fi prototyped website of a pottery shop/workshop designed in figma</p>
+                    </div>
+                </div>
+            <div class="abox"><img class="abox3" src="images/aposter.jpeg" alt="poster">
+                <div class="abox1align">
+                    <p class="aboxtext1">Hover to learn more</p>
+                    </div>
+                <div class="a3overlay">
+                    <p class="aoverlaytext3">A movie poster built in photoshop</p>
+                    </div>
+                </div>
         </div>
         <div class="asecondrow">
-            <div class="abox"><img class="abox1" src="images/aoldphoto.jpeg"></div>
-            <div class="abox"><img class="abox1" src="images/ajava.jpeg"></div>
-            <div class="abox"><img class="abox1" src="images/aweb.jpeg"></div>
+            <div class="abox"><img class="abox4" src="images/aoldphoto.jpeg">
+                <div class="abox1align">
+                    <p class="aboxtext1">Hover to learn more</p>
+                    </div>
+                <div class="a4overlay">
+                    <p class="aoverlaytext4">An old photo, of a woman and her child, worn out with cracks, was restored using photoshop. </p>
+                    </div>
+            </div>
+            <div class="abox"><img class="abox5" src="images/ajava.jpeg">
+                <div class="abox1align">
+                    <p class="aboxtext1">Hover to learn more</p>
+                    </div>
+                <div class="a5overlay">
+                    <p class="aoverlaytext5">An acronym for a way to code was coded combining javascript with html.</p>
+                    </div>
+            </div>
+            <div class="abox"><img class="abox6" src="images/aweb.jpeg">
+                <div class="abox1align">
+                    <p class="aboxtext1">Hover to learn more</p>
+                    </div>
+                <div class="a6overlay">
+                    <p class="aoverlaytext6">Zen website, focused on mind and wellness, coded in html and css.</p>
+                    </div>
+            </div>
         </div>
     </div>
 
     <div class="aeducation">
         <h2 class="aedtext">My Education</h2>
-        <div class="aedcircle"></div>
-        <div class="aedbigcir"></div>
+        <div class="aedalign">
+            <div class="aedbigcir"><img class="abcit" src="images/abcit.jpeg" alt="bcit campus">
+                <div class="abox1align">
+                    <p class="aboxtext3">Hover to learn more</p>
+                    <p class="aboxtext2">https://dailyhive.com/vancouver/bcit-trades-and-technology-complex-burnaby-campus</p>
+                    </div>
+                    <div class="a7overlay">
+                    <p class="aoverlaytext7">Anika is currently at BCIT from 2022-2024 taking the Digital Design and Development Program. </p>
+                    </div></div>
+            <div class="aedcircle"><img class="akpu" src="images/akpucam.jpeg" alt="kpu campus">
+                <div class="abox1align">
+                    <p class="aboxtext4">Hover to learn more</p>
+                    <p class="aboxtext5">https://www.kpu.ca/surrey</p>
+                    </div>
+                    <div class="a8overlay">
+                    <p class="aoverlaytext8">Anika had attended KPU in 2019 for one semester of Psychology and Astronomy.  </p>
+                    </div></div>
+        
+        </div>
     </div>
+    <div class="ahobbies">
+        <h2 class="ahobheader">My Hobbies</h2>
+        <div class="abanneralign">
+            <img id="bannerImage" src="images/apainting.jpg" /><br />
+            <div class="a9overlay">
+               
+                </div>
+        </div>
+       <div class="abuttons">
+        <div class="abuttonalign">
+        <button class="abutton1" onclick="changeImage('images/apainting.jpg')">
+            
+            </button>
+    </div>
+    <div class="abuttonalign">
+        <button class="abutton2" onclick="changeImage('images/awaterfall.jpg')"></button>
+    </div>
+    <div class="abuttonalign">
+        <button class="abutton3" onclick="changeImage('images/afood.jpg')"></button>
+    </div>
+</div>
+    </div>
+    <div class="aiconsalign">
+        <img class="aicons" src="images/alink.png">
+        <img class="aicons" src="images/ainsta.png">
+        <img class="aicons" src="images/atwit.png">
+       </div>
+    </div>
+
   
     <script>
-        function on() {
-            document.getElementById("overlay").style.display = "block";
+        
+        //Navigation Bar
+        var navMobile = document.getElementById("aNames");
+        var aBar1 = document.getElementById("aBar1")
+        var aBar2 = document.getElementById("aBar2")
+        var aBar3 = document.getElementById("aBar3")
+
+        function menuToggle(){
+            aNames.classList.toggle("aNamesActive");
+            aBar1.classList.toggle("aChange1");
+            aBar2.classList.toggle("aChange2");
+            aBar3.classList.toggle("aChange3");
         }
+
+        function changeImage(fileName) {
+            let img = document.querySelector("#bannerImage");
+            img.setAttribute("src", fileName);
+        };
+       
+        
     </script>
 </body>
 </html>
