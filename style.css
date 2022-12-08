@@ -454,6 +454,7 @@
     height: 50px;
     border-radius: 20px;
     object-fit: cover;
+    cursor: pointer;
 }
 .aprotext {
     font-size: 32px;
