@@ -321,6 +321,7 @@
 .aA {
     text-decoration: none;
     columns: black;
+    color: black;
 }
 
 .aA:hover {
