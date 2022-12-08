@@ -1215,7 +1215,25 @@
         border-radius: 59px;
         cursor: pointer;
     }
-  
+    .aboxtext4 {
+        font-size: 20px;
+        color: black;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        background-color: rgba(255, 255, 255, 0.653);
+        border-radius: 10px;
+    }
+    
+    .aboxtext5 {
+        font-size: 14px;
+        color: black;
+        position: absolute;
+        top: 70%;
+        left: 15%;
+        background-color: rgba(255, 255, 255, 0.346);
+        border-radius: 10px;
+    }
 
 }
 
