@@ -2317,10 +2317,12 @@ img.pcircle-blue{
 
 
 /* Kyle Page */
+
 .kimg {
     width: 150px;
     height: 150px;
 }
+
 
 .kcontainer1 {
     position: absolute;
@@ -2385,7 +2387,6 @@ img.pcircle-blue{
 
 .kyleprofilecircle {
     display: flex;
-
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -2507,11 +2508,13 @@ img.pcircle-blue{
     top: 300%;
     height: 20%;
 }
+
 .kimg:hover {
     box-shadow: 6px 6px 10px rgb(0, 0, 0);
     transition: 300ms;
   }
-@media screen and (max-width: 500px) {
+
+  @media screen and (max-width: 500px) {
 
 
     .kcontainer1 {
