@@ -3445,6 +3445,7 @@ img.pcircle-blue{
     max-width: 480px;
     max-height: 325px;
     width: 30vw;
+    height: 20vw;
     object-fit: cover;
     border-radius: 50px;
 }
@@ -3486,7 +3487,6 @@ img.pcircle-blue{
     padding-left: 5vw;
     padding-right: 5vw;
     padding-bottom: 10px;
-    padding-top: 2vw;
     color: #F2E9E4;
 }
 
@@ -3552,7 +3552,8 @@ img.pcircle-blue{
 
     .mHobbiesImage{
         border-radius: 25px;
-        width: 40vw;
+        width: 45vw;
+        height: 30vw;
         padding-top: 10px;
     }
 }
