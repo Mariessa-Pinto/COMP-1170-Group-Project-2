@@ -2496,10 +2496,20 @@ img.pcircle-blue{
     border-radius: 50%;
 }
 
+.kDJ:hover {
+    box-shadow: 6px 6px 10px rgb(0, 0, 0);
+    transition: 300ms;
+  }
+
 .kprint {
     box-shadow: #22223B 10px 1px 20px;
     border-radius: 50%;
 }
+
+.kprint:hover {
+    box-shadow: 6px 6px 10px rgb(0, 0, 0);
+    transition: 300ms;
+  }
 
 .khobbiestext {
     display: flex;
