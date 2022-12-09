@@ -631,7 +631,7 @@
     border-radius: 59px;
     transition: opacity 0.25s;
     cursor: pointer;
-    background-image: url("images/avector.jpeg");
+    background-image: url("images/anika/avector.jpeg");
     background-size: cover;
 }
 
@@ -650,7 +650,7 @@
     border-radius: 59px;
     transition: opacity 0.25s;
     cursor: pointer;
-    background-image: url("images/aprototype.jpeg");
+    background-image: url("images/anika/aprototype.jpeg");
     background-size: cover;
 }
 .a3overlay {
@@ -668,7 +668,7 @@
     border-radius: 59px;
     transition: opacity 0.25s;
     cursor: pointer;
-    background-image: url("images/aposter.jpeg");
+    background-image: url("images/anika/aposter.jpeg");
     background-size: cover;
 }
 
@@ -687,7 +687,7 @@
     border-radius: 59px;
     transition: opacity 0.25s;
     cursor: pointer;
-    background-image: url("images/aoldphoto.jpeg");
+    background-image: url("images/anika/aoldphoto.jpeg");
     background-size: cover;
 }
 
@@ -706,7 +706,7 @@
     border-radius: 59px;
     transition: opacity 0.25s;
     cursor: pointer;
-    background-image: url("images/ajava.jpeg");
+    background-image: url("images/anika/ajava.jpeg");
     background-size: cover;
 }
 
@@ -725,7 +725,7 @@
     border-radius: 59px;
     transition: opacity 0.25s;
     cursor: pointer;
-    background-image: url("images/aweb.jpeg");
+    background-image: url("images/anika/aweb.jpeg");
     background-size: cover;
 }
 
@@ -744,7 +744,7 @@
     border-radius: 50%;
     transition: opacity 0.25s;
     cursor: pointer;
-    background-image: url("images/abcit.jpeg");
+    background-image: url("images/anika/abcit.jpeg");
     background-size: cover;
 }
 .a8overlay {
@@ -762,7 +762,7 @@
     border-radius: 50%;
     transition: opacity 0.25s;
     cursor: pointer;
-    background-image: url("images/akpucam.jpeg");
+    background-image: url("images/anika/akpucam.jpeg");
     background-size: cover;
 }
 
@@ -830,6 +830,7 @@
     background-color: rgba(255, 255, 255, 0.346);
     border-radius: 10px;
 }
+
 
 .a1overlay:hover {
     opacity: 1;
@@ -918,11 +919,7 @@
     background-color: rgba(0,0,0,0.6);
     border-radius: 10px;
 }
-.aoverlaytext9 {
-    font-size: 20px;
-    color: white;
-    background-color: rgba(0,0,0,0.6);
-}
+
 
 
 
@@ -930,7 +927,37 @@
     transform: scale(1.8);
 }
 
+.a1text {
+    visibility: hidden;
+}
 
+.a2text {
+    visibility: hidden;
+}
+
+.a3text {
+    visibility: hidden;
+}
+
+.a4text {
+    visibility: hidden;
+}
+
+.a5text {
+    visibility: hidden;
+}
+
+.a6text {
+    visibility: hidden;
+}
+
+.a7text {
+    visibility: hidden;
+}
+
+.a8text {
+    visibility: hidden;
+}
 .ahobbies {
     display: flex;
     flex-direction: column;
@@ -959,7 +986,7 @@
 }
 
 .abutton1 {
-    background: url("images/apainting.jpg");
+    background: url("images/anika/apainting.jpg");
     background-size: cover;
     width: 280px;
     height: 280px;
@@ -968,7 +995,7 @@
     position: relative;
 }
 .abutton2 {
-    background: url("images/awaterfall.jpg");
+    background: url("images/anika/awaterfall.jpg");
     background-size: cover;
     width: 280px;
     height: 280px;
@@ -976,7 +1003,7 @@
     cursor: pointer;
 }
 .abutton3 {
-    background: url("images/afood.jpg");
+    background: url("images/anika/afood.jpg");
     background-size: cover;
     width: 280px;
     height: 280px;
@@ -1122,13 +1149,13 @@
     .afirstrow {
         display: flex;
         flex-direction: column;
-        gap: 70px;
+        gap: 105px;
     }
     
     .asecondrow {
         display: flex;
         flex-direction: column;
-        gap: 70px;
+        gap: 105px;
         margin-top: 100px;
     }
     .aprojects {
@@ -1144,6 +1171,7 @@
     .ahobbies {
         display: flex;
         align-items: center;
+        margin-top: 30%;
     }
 
     .aprotext {
@@ -1155,6 +1183,7 @@
         width: 240px;
         background-color: #C9ADA7;
         border-radius: 50%;
+        margin-top: 30%;
     }
     .aedbigcir {
         height: 380px;
@@ -1194,7 +1223,7 @@
     }
     
     .abutton1 {
-        background: url("images/apainting.jpg");
+        background: url("images/anika/apainting.jpg");
         background-size: cover;
         width: 120px;
         height: 120px;
@@ -1202,7 +1231,7 @@
         cursor: pointer;
     }
     .abutton2 {
-        background: url("images/awaterfall.jpg");
+        background: url("images/anika/awaterfall.jpg");
         background-size: cover;
         width: 120px;
         height: 120px;
@@ -1210,7 +1239,7 @@
         cursor: pointer;
     }
     .abutton3 {
-        background: url("images/afood.jpg");
+        background: url("images/anika/afood.jpg");
         background-size: cover;
         width: 120px;
         height: 120px;
@@ -1218,15 +1247,17 @@
         cursor: pointer;
     }
     .aboxtext4 {
-        font-size: 20px;
-        color: black;
-        position: absolute;
-        top: 50%;
-        left: 5%;
-        background-color: rgba(255, 255, 255, 0.653);
-        border-radius: 10px;
+        visibility: hidden;
     }
     
+    .aboxtext3 {
+       visibility: hidden;
+    }
+
+    .aboxtext1 {
+        visibility: hidden;
+    }
+
     .aboxtext5 {
         font-size: 14px;
         color: black;
@@ -1237,7 +1268,61 @@
         border-radius: 10px;
     }
 
+   .a1text {
+    color: black;
+    font-size: 20px;
+    visibility: visible;
+    margin-top: 0;
+   }
+   
+   .a2text {
+    color: black;
+    font-size: 20px;
+    visibility: visible;
+    margin-top: 0;
+   }
+   .a3text {
+    color: black;
+    font-size: 20px;
+    visibility: visible;
+    margin-top: 0;
+   }
+   .a4text {
+    color: black;
+    font-size: 20px;
+    visibility: visible;
+    margin-top: 0;
+   }
+   .a5text {
+    color: black;
+    font-size: 20px;
+    visibility: visible;
+    margin-top: 0;
+   }
+   .a6text {
+    color: black;
+    font-size: 20px;
+    visibility: visible;
+    margin-top: 0;
+   }
+   .a7text {
+    color: black;
+    font-size: 20px;
+    visibility: visible;
+    margin-top: 0;
+   }
+   .a8text {
+    color: black;
+    font-size: 20px;
+    visibility: visible;
+    margin-top: 0;
+   }
+
+
+    
+    
 }
+
 
 
 
