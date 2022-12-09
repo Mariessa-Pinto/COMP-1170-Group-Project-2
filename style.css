@@ -1864,17 +1864,20 @@ img.pcircle-blue{
     background-color: #22223B;
 } */
 
-/* Kyle Page */
 
 /* Kyle Page */
+.kimg {
+    width: 150px;
+    height: 150px;
+}
+
 .kcontainer1 {
     position: absolute;
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    top: 10px;
+    top: 180px;
     color: #fff;
-    padding-left: 18%;
+    padding-left: 30%;
+    z-index: 2;
 }
 
 .kylecontainer2 {
@@ -1887,6 +1890,7 @@ img.pcircle-blue{
     text-align: left;
     color: #fff;
 }
+
 .kylecontainer3 {
     position: absolute;
     display: flex;
@@ -1907,58 +1911,250 @@ img.pcircle-blue{
     padding-left: 24%;
     gap: 120px;
 }
+
 .kylebodytext {
     position: absolute;
     display: flex;
-    top: 40%;
+    top: 35%;
     z-index: 6;
-    color: #F2E9E4;
-    padding-left: 38%;
+    color: #4A4E69;
+    padding-left: 50%;
+    flex-direction: column;
 }
 
-.kylecircle{
+.kylecircle {
     display: flex;
     flex-direction: row;
     height: 240px;
     width: 240px;
     background-color: #9A8C98;
     border-radius: 50%;
+    box-shadow: #22223B 10px 1px 20px
 }
-.kyletextcontainer1{
+
+.kyleprofilecircle {
     display: flex;
-    top: 90%;
+
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: #22223B 10px 1px 20px
+}
+
+.kyletextcontainer1 {
+    display: flex;
+    flex-direction: row;
+    top: 135%;
     position: absolute;
     padding-left: 25%;
-    gap: 170%;
+    gap: 77%
 }
-.kyletextcontainer2{
+
+.kyletextcontainer2 {
     display: flex;
-    top: 95%;
+    flex-direction: row;
+    top: 88%;
     position: absolute;
     padding-left: 25%;
-    gap: 122%;
+    gap: 50%;
 }
-.kyletextcontainer3{
+
+.kyletextcontainer3 {
     display: flex;
+    flex-direction: row;
     top: 135%;
     position: absolute;
     padding-left: 25%;
     gap: 170%;
 }
-.kyletextcontainer4{
-    display: flex;
+
+.kyletextcontainer4 {
+    display: inline-flex;
     top: 140%;
     position: absolute;
     padding-left: 25%;
     gap: 122%;
     z-index: 2;
 }
-.kbanner1{
+
+.kmainrectangle {
+    display: flex;
+    width: 1080px;
+    height: 480px;
+    top: 80px;
+    border-radius: 50px;
+    background-color: #C9ADA7;
+    box-shadow: #22223B 10px 1px 20px
+}
+
+.kcircle {
+    display: flex;
+    height: 310px;
+    width: 310px;
+    background-color: #9A8C98;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: #22223B 10px 1px 20px
+}
+
+.keducationimg {
     display: flex;
     position: absolute;
-
-    top: 140%;
+    width: 1080px;
+    height: 480px;
+    top: 155%;
+    border-radius: 50px;
+    left: 20%;
+    box-shadow: #22223B 10px 1px 20px
 }
+
+.keducation {
+    display: flex;
+    position: absolute;
+    top: 145%;
+    left: 20%;
+}
+
+.keducationtext {
+    display: flex;
+    position: absolute;
+    top: 215%;
+    left: 20%;
+}
+
+.khobbies {
+    display: flex;
+    position: absolute;
+    top: 230%;
+    left: 20%;
+}
+
+.khobbiesimg {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 24%;
+    gap: 10%;
+    height: 50%;
+    top: 242%;
+}
+
+.kDJ {
+    box-shadow: #22223B 10px 1px 20px;
+    border-radius: 50%;
+}
+
+.kprint {
+    box-shadow: #22223B 10px 1px 20px;
+    border-radius: 50%;
+}
+
+.khobbiestext {
+    display: flex;
+    position: absolute;
+    left: 20%;
+    top: 300%;
+    height: 20%;
+}
+.kimg:hover {
+    box-shadow: 6px 6px 10px rgb(0, 0, 0);
+    transition: 300ms;
+  }
+@media screen and (max-width: 500px) {
+
+
+    .kcontainer1 {
+        padding-left: 15%;
+        padding-top: px;
+        
+    }
+
+    .kylebodytext {
+        top: 60%;
+        padding-left: 35px;
+        left: 3%;
+    }
+
+    .kylecontainer2 {
+        display: none;  
+    }
+
+    .kmainrectangle {
+        padding-left: 30px;
+        width: 20%;
+    
+        height: 120%;
+        display: -ms-grid;
+        display: grid;
+        row-gap: 2em;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .kylecontainer3 {
+        flex-direction: column;
+        top: 85%;
+        padding-left: 100px;
+
+    }
+
+    .kylecontainer4 {
+        top: 210%;
+        flex-direction: column;
+        padding-left: 100px;
+    }
+    .kyletextcontainer1{
+        flex-direction: column;
+        top: 240%;
+        gap: 50%;
+        grid-gap: 160%;
+        display: grid;
+        padding-left: 45px;
+
+    }
+    .kyletextcontainer2{
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        top: 115%;
+        grid-gap: 160%;
+        display: grid;
+        padding-left: 45px;
+    }
+    .keducationimg {
+        top: 350%;
+        width: 60%;
+        height: 35%;
+        display: -ms-grid;
+        display: grid;
+        row-gap: 2em;
+    } 
+    .keducation{
+        top: 340%;
+        left: 45px;
+    }
+   .keducationtext{
+    top: 385%;
+    left: 45px;
+    padding: 40px;
+   }
+    .khobbiesimg {
+        flex-direction: column;
+        width: 70%;
+        left: 15%;
+        top: 422%;
+    }
+    .khobbies{
+        top: 410%;
+        left: 45px;
+    }
+    .khobbiestext{
+        top: 500%;
+        padding-left: 35px;
+        padding: 40px;
+        left: 3%;
+    }
+}
+
 
 
 /* Mariessa Page */
