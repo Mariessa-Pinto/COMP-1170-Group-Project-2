@@ -10,25 +10,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b49f2d590b.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="pbody">
-
     <div class="pNav">
         <a class="pA" href="Index.html">HOME</a>
-        <div class="pNames">
+        <div class="pNames" id="pNames">
             <a class="pA" href="anika.html">Anika</a>
             <a class="pA" href="kyle.html">Kyle</a>
             <a class="pA" href="mariessa.html">Mariessa</a>
             <a class="pA" href="patricia.html">Patricia</a>
             <a class="pA" href="yanjun.html">YanJun</a>
         </div>
+        <div class="iHamContainer" onclick="menuToggle()">
+            <div id="iBar1" class="iHamburger"></div>
+            <div id="iBar2" class="iHamburger"></div>
+            <div id="iBar3" class="iHamburger"></div>
+        </div>
     </div>
 
     <div class="bubbles">
         <div class="pbox1">
             <a href="Images/patricia/pj_catvid2.MOV">
-                <video src="images/patricia/pj_catvid2.MOV" autoplay muted loop class="pmedcircle pcircle-default pImgAdj-1" alt="">
+                <video src="Images/patricia/pj_catvid2.MOV" autoplay muted loop class="pmedcircle pcircle-default pImgAdj-1" alt="">
             </a>
         </div>
         <div class="pbox2"><a href="Images/patricia/HS1cropped(1).png" target="_blank"><img
@@ -62,11 +67,13 @@
                     <div class="pbody-text">As an avid fan of singer Taylor Swift, Patricia created a vector logo inspired by Swift's album, <i>Lover</i>.
                     </div>
         </div>
+
         <div class="pbox8"><a href="Images/patricia/pj_vector1.png" target="_blank"><img
                     src="Images/patricia/pj_vector1.png" class="pmedcircle pcircle-default pImgAdj-3" alt=""></a>
                     <div class="pbody-text">In an ideal world, Patricia would be surrounded by cats and plants while sleeping in a room with floor-to-ceiling windows. 
                     </div>
         </div>
+
 
         <div class="pbox9"><a href="Images/patricia/pj_sewing6.JPG" target="_blank"><img
                     src="Images/patricia/pj_sewing6.JPG" class="pmedcircle pcircle-default pImgAdj-3" alt=""></a>
@@ -75,13 +82,20 @@
             she sewed a full Victorian-era costume, complete with lining and a bustle.
         </div>
 
+        <div class="pbox26"><a href="Images/patricia/pj_photoshop1.png" target="_blank"><img
+            src="Images/patricia/pj_photoshop1.png" class="pmedcircle pcircle-default pImgAdj-1" alt=""></a>
+        </div>
+        <div class="pbox27 pbody-text">In Patricia's opinion, Halloween is the best holiday of the year! This magazine cover was created with this holiday in mind
+            using Photoshop software. 
+        </div>
+
         <div class="pbox25">
-            <a href="Images/patricia/pj_drawing1.PNG" target="_blank">
-            <img src="images/patricia/pj_drawing1.PNG" class="pdrawing"></a>
+            <a href="Images/patricia/pj_drawing1.png" target="_blank">
+            <img src="Images/patricia/pj_drawing1.png" class="pdrawing"></a>
         </div>
 
         <div class="pbox10"><a href="Images/patricia/pj_sewing1.JPG" target="_blank"><img
-                    src="Images/patricia/pj_sewing1.JPG" class="pxsmallcircle pcircle-default" alt=""></a></div>
+                    src="Images/patricia/pj_sewing1.JPG" class="psmallcircle pcircle-default" alt=""></a></div>
 
         <div class="pbox11"><a href="Images/patricia/pj_sewing4.JPG" target="_blank"><img
                     src="Images/patricia/pj_sewing4.JPG" class="pmedcircle pcircle-default" alt=""></a></div>
@@ -127,6 +141,22 @@
         <div class="pbox24 pbody-text">That's all for now!</div>
 
     </div>
+
+    <script>
+        //Navigation Bar
+        var navMobile = document.getElementById("pNames");
+        var iBar1 = document.getElementById("iBar1")
+        var iBar2 = document.getElementById("iBar2")
+        var iBar3 = document.getElementById("iBar3")
+
+        function menuToggle(){
+            pNames.classList.toggle("pNamesActive");
+            iBar1.classList.toggle("iChange1");
+            iBar2.classList.toggle("iChange2");
+            iBar3.classList.toggle("iChange3");
+        }
+
+    </script> 
 
 </body>
 
