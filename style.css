@@ -1753,12 +1753,12 @@ img.pcircle-blue{
 
 /* YanJun Page */
 
-.yhtml, .ybody{
+.yhtml .ybody{
     margin: 0;
     padding: 0;
 }
 
-.yBody {
+.ybody {
     width: 100vw;
     height: 100vh;
 }
@@ -1783,18 +1783,89 @@ img.pcircle-blue{
     color: black;
 }
 
+.yA:hover {
+    text-decoration: underline;
+    color: #F2E9E4;
+}
+
+.yHamContainer{
+    display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+
+    .yNames{
+        display: none;
+        visibility: hidden;
+    }
+
+    .yNamesActive{
+        display: flex;
+        visibility: visible;
+        flex-direction: column;
+        width: 80px;
+        align-items: flex-end;
+        padding-top: 232px;
+        gap: 20px;
+        z-index: 12;
+        background-color: none;
+        padding-right: 10px;
+        border-radius: 10px;
+        padding-bottom: 5px;
+        position: absolute;
+        right: 43px;
+    }
+    
+    .yNav{
+        justify-content: space-between;
+        padding-left: 90px;
+        padding-right: 50px;
+    }
+
+    .yHamburger{
+        width: 35px;
+        height: 4px;
+        background-color: black;
+        border-radius: 25px;
+        margin: 3px 0;
+        transition: 500ms;
+    }
+    .yHamContainer{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 13;
+    }
+
+    .yChange1{
+        transform: translate(0, 10px) rotate(-45deg);
+    }
+
+    .yChange2{
+        opacity: 0;
+    }
+
+    .yChange3{
+        transform: translate(0, -10px) rotate(45deg); 
+    }
+}
+
+
+
+
 .ycontainer {
     display: flex;
     flex-direction: column;
 }
 
 .yfirst-page {
-    background-image: url(image.png);
+    background-image: url(images/yanjun/image.png);
     background-position: center;
     background-attachment: fixed;
-    /* background-repeat: no-repeat; */
     height:100vh;
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .ytext {
@@ -1805,6 +1876,7 @@ img.pcircle-blue{
 }
 
 .ybig-title {
+    position: relative;
     font-size: 90px;
     font-weight: bold;
     margin-top: 20%;
@@ -1813,42 +1885,43 @@ img.pcircle-blue{
 .ytitle {
     font-size: 60px;
     font-weight: bold;
-    margin-top: 8%; 
 }
 
 .ytitle-page-1 {
-    background-image: url(image2.jpg);
+    background-image: url(images/image2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    height:40vh;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ysecond-page {
-    background-image: url(background-color.png);
+    background-image: url(images/yanjun/background-color1.png);
+    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    height:200vh;
-    position: relative;
+    height: 2000px;
 }
 
 .ybox {
+    flex-wrap: wrap;
+    justify-content: center;
     position: relative;
-    margin-left: 14%;
     margin-top: 10%;
     display: flex;
 }
+
 .yprofile-pic{ 
     display: flex;
     position: relative;
     z-index: 1;
-    margin-top: 4%;
-    margin-left: 11%;
-    height: 300px;
+    height: 390px;
     width: 300px;
-    border-radius: 50%;
-    border: 5px solid #9a8c98;
+    border-radius: 10%;
+    border: 10px solid #9a8c98;
     background: #9a8c98;
     box-shadow: 0 5px 20px #9a8c98;
 }
@@ -1856,8 +1929,9 @@ img.pcircle-blue{
 .yrectangle{
     position: relative;
     display: flex;
-    width: 62vw;
-    height: 46vh;
+    flex-direction: column;
+    align-items: center;
+    width: 73%;
     margin-left: -28%;
     padding-top: 40px;
     border-radius: 50px;
@@ -1865,18 +1939,147 @@ img.pcircle-blue{
     box-shadow: 0 5px 20px #9a8c98;
 }
 
-#ycontent {
-    color: #fff;
-    padding-left: 500px;
-    padding-top: 12%;
-    font-size: 2vmin;
+.ycontent-title {
+    color: #F2E9E4;
+    font-size: 30px;
+    padding-left: 16%;
 }
 
-.yh2 {
-    margin-top: 5%;
+.ycontent {
+    color: #F2E9E4;
+    padding-left: 500px;
+    padding-top: -1%;
+    padding-left: 40%;
+    font-size: 15px;
+}
+
+.ypage-title {
+    margin-top: 10%;
     margin-left: 10%;
 }
-.ybox-2 {
+
+.yproject {
+    margin-left: 15%;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.yproject-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    overflow: hidden;
+    margin-top: 5%;
+    border: #22223B 6px solid;
+    border-radius: 10px;
+}
+
+.yproject-box:hover {
+    cursor: pointer;
+}
+
+.yproject-img {
+    width: 100%;
+    height: 100%;
+}
+
+.yproject-textbox {
+    position: absolute;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #22223B;
+    color: #F2E9E4;
+    transition: all .7s ease-out;
+}
+
+.yproject-box:hover .yproject-textbox {
+    top: 0;
+}
+
+.yprojext-text {
+    padding: 20px;
+    font-weight: 500;
+}
+
+.ytitle-page-2 {
+    background-image: url(images/yanjun/image3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ythird-page {
+    background-image: url(images/yanjun/background-color1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height:1550px;
+}
+
+.ytravel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 6%;
+}
+.ytravel-box {
+    max-width: 1030px;
+    max-height: 820px;
+    display: grid;
+    grid-template-columns: 300px 200px 300px;
+    grid-template-rows: 250px 250px 250px 250px;
+    gap: 10px;
+}
+
+.yone {
+    grid-column: span 2;
+}
+
+.ytwo {
+    grid-row: span 2;
+}
+
+.yheight {
+    width: 300px;
+    height: 510px;
+    border-radius: 10px;
+}
+
+.ywidth {
+    width: 510px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.ypage-content {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.yfourth-page {
+    background-color: #22223B;
+    height:1100px;
+}
+
+.yfifth-page {
+    background-color: #F2E9E4;
+    height:1200px;
+}
+
+.ybigbox-movie {
     width: 82%;
     height: 650px;
     display: flex;
@@ -1884,7 +2087,7 @@ img.pcircle-blue{
     margin-left: 8%;
 }
 
-.yproject-box {
+.ymovie-box {
     flex: 1;
     overflow: hidden;
     transition: .5s;
@@ -1895,14 +2098,14 @@ img.pcircle-blue{
     background-color: #C9ADA7;
 }
 
-.yproject-img {
+.ymovie-img {
     width: 200%;
     height: 85%;
     object-fit: cover;
     transition: .5s;
 }
 
-.yproject-text {
+.ymovie-text {
     font-size: 15px;
     text-align: center;
     height: 15%;
@@ -1911,42 +2114,206 @@ img.pcircle-blue{
     align-items: center;
 }
 
-.yproject-box:hover {
+.ymovie-box:hover {
     flex-basis: 40%;
 }
 
-.yproject-img:hover {
+.ymovie-img:hover {
     width: 100%;
     height: 100%;
 }
 
-.ytitle-page-2 {
-    background-image: url(image3.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    height:40vh;
+.ypage-title-2 {
+    margin-left: 10%;
+    margin-top: 10%;
 }
 
-.ythird-page {
-    background-image: url(background-color.png);
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    height:200vh;
-    position: relative;
-}
-
-
-/* .text-box {
-    width: 50%;
-    height:50%;
-    position: absolute;
-    text-align: center;
+.ygame-box {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center ;
-    background-color: #22223B;
-} */
+    justify-content: center;
+    gap: 10px;
+    margin-top: 6%;
+}
+
+.ygame-bigbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ygame-box-small {
+    position: relative;
+    width: 480px;
+    height: 270px;
+}
+
+.ya {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.yb {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.ygame-box-small:hover .ya {
+    opacity: 0;
+}
+
+.ygame-box-small:hover .yb {
+    opacity: 1;
+}
+
+.ygame-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ypage-title-1 {
+    margin-top: 10%;
+    margin-left: 10%;
+    color: #F2E9E4;
+}
+
+.ypage-content-1 {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #F2E9E4;
+}
+
+.steam {
+    width: 30px;
+    padding-left: 7%;
+}
+
+
+
+@media only screen and (max-width: 1175px) {
+    .ysecond-page {
+        background-image: url(images/yanjun/background-color1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        height: 2900px;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .ysecond-page {
+        background-image: url(images/yanjun/background-color1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        height: 2800px;
+    }
+
+    .yfourth-page {
+        background-color: #22223B;
+        height: 1600px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .ytravel-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .height {
+        width: 250px;
+        height: 400px;
+    }
+    
+    .ywidth {
+        width: 400px;
+        height: 250px;
+    }
+
+    .ysecond-page {
+        background-image: url(images/yanjun/background-color1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        height: 2800px;
+    }
+
+    .yfourth-page {
+        background-color: #22223B;
+        height: 1500px;
+    }
+
+    .ythird-page {
+        background-image: url(images/yanjun/background-color1.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        height: 2500px;
+    }
+    
+}
+
+@media only screen and (max-width: 640px) {
+    .ysecond-page {
+        background-image: url(images/yanjun/background-color1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        height: 2600px;
+    }
+
+    .yfourth-page {
+        background-color: #22223B;
+        height: 1500px;
+    }
+
+    .ythird-page {
+        background-image: url(images/yanjun/background-color1.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        height: 2500px;
+    }
+    
+    .yprofile-pic {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        height: 334px;
+        width: 247px;
+        border-radius: 10%;
+        border: 10px solid #9a8c98;
+        background: #9a8c98;
+        box-shadow: 0 5px 20px #9a8c98;
+    }
+
+    .ybigbox-movie {
+        width: 82%;
+        height: 1000px;
+        display: flex;
+        margin-top: 9%;
+        margin-left: 8%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .yfifth-page {
+        background-color: #F2E9E4;
+        height: 1350px;
+    }
+}
 
 
 /* Kyle Page */

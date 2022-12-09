@@ -7,20 +7,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="group project 2.css">
+    <link rel="stylesheet" href="style.css">
     <title>Yanjun Liu</title>
 </head>
-<body class="yBody">
+<body class="ybody">
     <div class="ycontainer">
         <div class="yfirst-page">
             <div class="yNav">
                 <a class="yA" href="Index.html">HOME</a>
-                <div class="yNames">
+                <div id="yNames" class="yNames">
                     <a class="yA" href="anika.html">Anika</a>
                     <a class="yA" href="kyle.html">Kyle</a>
                     <a class="yA" href="mariessa.html">Mariessa</a>
                     <a class="yA" href="patricia.html">Patricia</a>
-                    <a class="yA" href="yanjun.html">YanJun</a>
+                    <a class="yA" href="yanjun.html">Yanjun</a>
+                </div>
+                <div class="yHamContainer" onclick="menuToggle()">
+                    <div id="yBar1" class="yHamburger"></div>
+                    <div id="yBar2" class="yHamburger"></div>
+                    <div id="yBar3" class="yHamburger"></div>
                 </div>
             </div>
             <div class="ytext">
@@ -28,34 +33,48 @@
             </div>
         </div>
         <div class="ytitle-page-1">
-            <div class="text">
+            <div class="ytext">
                 <div class="ytitle">About me</div>
             </div>
         </div>
         <div class="ysecond-page">
             <div class="ybox">
-                <img class="yprofile-pic" src="" alt="profile picture">
+                <img class="yprofile-pic" src="images/yanjun/profile.JPG" alt="profile picture">
                 <div class="yrectangle">
-                    <p id="ycontent">Yanjun Liu <br> Education</p>
+                    <p class="ycontent-title">Yanjun Liu</p>
+                    <p class="ycontent">Hello! I'm a video game player and this is my first year in BCIT D3 program. After graduating from high school in my hometown Tianjin China, I came to BCIT to start a new study.</p>
                 </div>
             </div>
-            <h2 class="yh2">Personal projects</h2>
-            <div class="ybox-2">
+            <h2 class="ypage-title">Personal Projects</h2>
+            <p class="ypage-content">My projects in Vector Graphic and Photoshop class.</p>
+            <div class="yproject">
                 <div class="yproject-box">
-                    <img class="yproject-img" src="Images/yanjun/project1.png" alt="project-1">
-                    <div class="yproject-text">project-1</div>
+                    <img class="yproject-img" src="images/yanjun/project1.png" alt="">
+                    <div class="yproject-textbox">
+                        <h1>Vector Graphics</h1>
+                        <p class="yprojext-text">Copy a statue in Illustrator using the Pen tool</p>
+                    </div>
                 </div>
                 <div class="yproject-box">
-                    <img class="yproject-img" src="Images/yanjun/project2.png" alt="project-2">
-                    <div class="yproject-text">project-2</div>
+                    <img class="yproject-img" src="images/yanjun/project2.png" alt="">
+                    <div class="yproject-textbox">
+                        <h1>Vector Graphics</h1>
+                        <p class="yprojext-text">Creating fantasy world. My fantasy world is to become a "Porter" in "Death Stranding"</p>
+                    </div>
                 </div>
                 <div class="yproject-box">
-                    <img class="yproject-img" src="Images/yanjun/project3.png" alt="project-3">
-                    <div class="yproject-text">project-3</div>
+                    <img class="yproject-img" src="images/yanjun/project3.png" alt="">
+                    <div class="yproject-textbox">
+                        <h1>Vector Graphic</h1>
+                        <p class="yprojext-text">Copy a product image with functions like "gradient" to make it look as real as possible</p>
+                    </div>
                 </div>
                 <div class="yproject-box">
-                    <img class="yproject-img" src="Images/yanjun/project4.png" alt="project-4">
-                    <div class="yproject-text">project-4</div>
+                    <img class="yproject-img" src="images/yanjun/project4.png" alt="">
+                    <div class="yproject-textbox">
+                        <h1>Photoshop</h1>
+                        <p class="yprojext-text">Creating the cover of a book. My work is about horror fiction: One day a woman touches an old photo of her old family house, then she gets trapped in the photo.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -65,8 +84,113 @@
             </div>
         </div>
         <div class="ythird-page">
-
+            <h2 class="ypage-title-2">Travel</h2>
+            <p class="ypage-content">My family and I have traveled through fourteen provinces in China as well as four countries. After graduating from high school, I traveled alone in China for one month. I like to explore the less popular places and eat local food. Sometimes I bring my camera with me, but mostly I just use my phone to take pictures. In the future I plan to travel to more countries.</p>
+            <div class="ytravel">
+                <div class="ytravel-box">
+                    <div class="child ytwo">
+                        <img class="yheight" src="images/yanjun/photograph1.JPG" alt="">
+                    </div>
+                    <div class="child yone">
+                        <img class="ywidth" src="images/yanjun/photograph2.JPG" alt="">
+                    </div>
+                    <!-- <div class="child">3</div> -->
+                    <!-- <div class="child">4</div> -->
+                    <div class="child yone">
+                        <img class="ywidth" src="images/yanjun/photograph3.JPG" alt="">
+                    </div>
+                    <!-- <div class="child">6</div> -->
+                    <div class="child yone">
+                        <img class="ywidth" src="images/yanjun/photograph4.JPG" alt="">
+                    </div>
+                    <!-- <div class="child">8</div> -->
+                    <div class="child ytwo">
+                        <img class="yheight" src="images/yanjun/photograph6.JPG" alt="">
+                    </div>
+                    <div class="child yone">
+                        <img class="ywidth" src="images/yanjun/photograph5.JPG" alt="">
+                    </div>
+                    <!-- <div class="child">11</div> -->
+                    <!-- <div class="child">12</div> -->
+                </div>
+            </div>
+        </div>
+        <div class="yfourth-page">
+            <h2 class="ypage-title-1">Play Games</h2>
+            <p class="ypage-content-1">Another hobby of mine is playing games. My favorite types of games are RPG, Soulslike, ACT and Metroidvania game. Recently I'm interested in card games.<br/> <br>Welcome to come Steam to play with me! :D <a href="https://steamcommunity.com/profiles/76561198812332422/"><img class="steam" src="steam.png" alt=""></a></p>
+            <div class="ygame-box">
+                <div class="ygame-bigbox">
+                    <div class="ygame-box-small">
+                        <div class="ya">
+                            <img class="ygame-image" src="images/yanjun/game1.JPG" alt="">
+                        </div>
+                        <div class="yb">
+                            <img class="ygame-image" src="images/yanjun/game1-1.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="ygame-box-small">
+                        <div class="ya">
+                            <img class="ygame-image" src="images/yanjun/game2.JPG" alt="">
+                        </div>
+                        <div class="yb">
+                            <img class="ygame-image" src="images/yanjun/game2-1.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="ygame-bigbox">
+                    <div class="ygame-box-small">
+                        <div class="ya">
+                            <img class="ygame-image" src="images/yanjun/game3.JPG" alt="">
+                        </div>
+                        <div class="yb">
+                            <img class="ygame-image" src="images/yanjun/game3-1.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="ygame-box-small">
+                        <div class="ya">
+                            <img class="ygame-image" src="images/yanjun/game4.JPG" alt="">
+                        </div>
+                        <div class="yb">
+                            <img class="ygame-image" src="images/yanjun/game4-1.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yfifth-page">
+            <h2 class="ypage-title">Watch Movies</h2>
+            <p class="ypage-content">In my spare time I will watch movies. Lord of the Rings is my favorite movie series. Every summer I will watch it again. I'm very glad I saw the re-release in the cinema last year.</p>
+            <div class="ybigbox-movie">
+                <div class="ymovie-box">
+                    <img class="ymovie-img" src="images/yanjun/movie1.jpg" alt="">
+                    <div class="ymovie-text">The Lord of the Rings</div>
+                </div>
+                <div class="ymovie-box">
+                    <img class="ymovie-img" src="images/yanjun/movie2.webp" alt="">
+                    <div class="ymovie-text">Love Letter</div>
+                </div>
+                <div class="ymovie-box">
+                    <img class="ymovie-img" src="images/yanjun/movie3.webp" alt="">
+                    <div class="ymovie-text">Whiplash</div>
+                </div>
+            </div>
         </div>
     </div>
+
+<script>
+        //Navigation Bar
+        var yMobile = document.getElementById("yNames");
+        var yBar1 = document.getElementById("yBar1")
+        var yBar2 = document.getElementById("yBar2")
+        var yBar3 = document.getElementById("yBar3")
+
+        function menuToggle(){
+            yNames.classList.toggle("yNamesActive");
+            yBar1.classList.toggle("yChange1");
+            yBar2.classList.toggle("yChange2");
+            yBar3.classList.toggle("yChange3");
+        }
+
+</script>
 </body>
 </html>
